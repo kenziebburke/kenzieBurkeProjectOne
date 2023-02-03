@@ -27,10 +27,10 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="wrapper">
-            <!-- Logo imgWrapper -->
+        <div class="wrapper headerNav">
+            <!-- Logo -->
             <div class="homeLogo">
-                <img src="./assets/home-box-header.png" alt="Logo with the words Shoe Kloset">
+                <p>Shoe Kloset</p>
             </div>
 
             <!-- Nav -->
@@ -51,21 +51,45 @@
 
     <!-- MAIN -->
     <main>
+        <!-- CONTACT FORM -->
         <section class="contactForm">
-            <div class="wrapper contactWrapper">
-                <form action="">
-                    <label for=""></label>
-                    <input type="text">
+            <div class="wrapper contactFormWrapper">
+                <form action="#" method="#" class="contactForm" name="contactForm">
+                    <!-- name input -->
+                    <label for="userName">Name</label>
+                    <input type="text" id="userName" name="userName" required="true">
 
-                    <label for=""></label>
-                    <input type="text">
+                    <!-- email input -->
+                    <label for="userEmail">Email</label>
+                    <input type="text" id="userEmail" name="userName" required="true">
 
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <!-- message input -->
+                    <label for="message" class="sr-only">Please leave us a message</label>
+                    <textarea name="message" id="message" required="true"></textarea>
 
-                    <button></button>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </section>
+
+        <!-- ASIDE SECTION W CONTACT INFO -->
+        <aside>
+            <div class="wrapper contactAside">
+                <!-- 4 icon tags here -->
+                <div class="contactInfo"></div>
+                    <h2>info@email.com</h2>
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>V5V2D5</p>
+                </div>
+            </div>
+        </aside>
     </main>
 
+    <footer>
+        <div class="wrapper">
+            <p>Copyright © 2019 Juno College</p>
+        </div>
+    </footer>
     </body>
