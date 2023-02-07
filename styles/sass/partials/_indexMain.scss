@@ -1,0 +1,105 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+// ABOUT STYLING SECTION
+.about{
+    background-color: $backgroundColor1;
+    padding: 20% 0;
+    .wrapper{
+        text-align: center;
+        h2{
+            @include h2(2.6rem);
+            padding: 20px 0;
+        }
+        p{
+            padding-bottom: 20px;
+        }
+        button{
+            color: $backgroundColor2;
+            background-color: $primaryColor;
+            padding: 8px 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            font-size: 1rem;
+            border: none;
+        }
+    }
+}
+
+// BLOG INDEX PREVIEW STYLING SECTION
+// COMEB BACK HERE AND WORK ON SOME FLEX WRAP TO ENSURE THAT ITS MORE RESPONSIVE REFER TO THE CODE ALONG IN CLASS FROM A FEW DAYS AGO
+// COME BACK AND WORK ON THE SHADOW BOXES FOR THE IMGS
+.blogPreview{
+    background-color: $backgroundColor2;
+    min-height: 100vh;
+    // setting the width on everthing to get it in the proper layout
+    .blog1 figure,
+    .blog1 article,
+    .blog2 figure,
+    .blog2 article{
+        width: 50%;
+    }
+
+    // giving both blogs a bit of breathing room on the bottom
+    .blog1,
+    .blog2{
+        padding-bottom: 30px;
+    }
+
+
+    // using a more responsive measurement
+    .blog1 article,
+    .blog2 article{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+        article{
+            h2{
+                @include h2(2.1rem);
+                padding: 20px 0;
+            }
+            p{
+                padding-bottom: 20px;
+            }
+            button{
+                color: $backgroundColor2;
+                background-color: $detailColor;
+                padding: 10px 12px;
+                text-transform: uppercase;
+                letter-spacing: 0.05rem;
+                font-size: 1rem;
+                border: none;
+            }
+    }
+}
+
+
+// ENGAGEMNET STYLING SECTION
+// ADD IN ICONS HERE 
+.engagment{
+    background-color: $backgroundColor1;
+    min-height: 60vh;
+    padding: 10% 0 5% 0;
+    .flexContainer{
+        flex-wrap: wrap;
+    }
+
+    .locations,
+    .community,
+    .blog,
+    .getInTouch{
+        flex-basis: 50%;
+        padding-bottom: 5%;
+    }
+    
+    .locations,
+    .blog{
+        padding-right: 5%;
+    }
+
+    h2{
+        @include h2(2.6rem);
+        padding-bottom: 10px;
+    }
+}

@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6, p {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
 }
 
 .flexContainer {
@@ -283,7 +283,8 @@ p, a, button {
 }
 
 p {
-  line-height: 1.45rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
 }
 
 .indexHeader {
@@ -365,4 +366,109 @@ header .indexH1 {
 .headerNav .navFlex a:focus {
   color: white;
   background-color: #4C0341;
+}
+
+header {
+  position: relative;
+}
+header .headerImg {
+  width: 50%;
+  position: absolute;
+  right: 0.1%;
+  bottom: -40%;
+}
+
+.about {
+  background-color: #FAE5FF;
+  padding: 20% 0;
+}
+.about .wrapper {
+  text-align: center;
+}
+.about .wrapper h2 {
+  font-size: 2.6rem;
+  color: #4C0341;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  padding: 20px 0;
+}
+.about .wrapper p {
+  padding-bottom: 20px;
+}
+.about .wrapper button {
+  color: #FFF;
+  background-color: #4C0341;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.blogPreview {
+  background-color: #FFF;
+  min-height: 100vh;
+}
+.blogPreview .blog1 figure,
+.blogPreview .blog1 article,
+.blogPreview .blog2 figure,
+.blogPreview .blog2 article {
+  width: 50%;
+}
+.blogPreview .blog1,
+.blogPreview .blog2 {
+  padding-bottom: 30px;
+}
+.blogPreview .blog1 article,
+.blogPreview .blog2 article {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.blogPreview article h2 {
+  font-size: 2.1rem;
+  color: #4C0341;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  padding: 20px 0;
+}
+.blogPreview article p {
+  padding-bottom: 20px;
+}
+.blogPreview article button {
+  color: #FFF;
+  background-color: #882C07;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.engagment {
+  background-color: #FAE5FF;
+  min-height: 60vh;
+  padding: 10% 0 5% 0;
+}
+.engagment .flexContainer {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.engagment .locations,
+.engagment .community,
+.engagment .blog,
+.engagment .getInTouch {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-bottom: 5%;
+}
+.engagment .locations,
+.engagment .blog {
+  padding-right: 5%;
+}
+.engagment h2 {
+  font-size: 2.6rem;
+  color: #4C0341;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  padding-bottom: 10px;
 }

@@ -1,0 +1,6 @@
+@mixin h2($sizeValue) {
+    font-size: $sizeValue;
+    color: #4C0341;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+}
