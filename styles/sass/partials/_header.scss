@@ -1,0 +1,76 @@
+@use './variables' as *;
+
+// setting the varying header images between the index, contact and blog page
+.indexHeader{
+    background-image: url(../assets/header-image.jpg);
+    min-height: 100vh;
+}
+
+.contactHeader{
+    background-image: url(../assets/contact-image.jpg);
+    min-height: 70vh;
+}
+
+.blogHeader{
+    background-image: url(../assets/blog-header.jpg);
+    min-height: 70vh;
+}
+
+// fixing the background image visibility and styling on each page
+header{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 30px 0;
+        h1{
+            margin-top: 150px;
+            color: $primaryColor;
+            font-size: 4.6rem;
+            letter-spacing: 0.08rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .indexH1{
+            font-size: 5.5rem;
+            width: 40%;
+            text-align: left;
+            line-height: 3.2rem;
+            text-transform: none;
+        }
+}
+
+// styling the nav between the three pages, flexing the logo as well as the nav with a space in between function then again flexing the nav li to get some space between in there as well
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+    .logoP{
+        font-family: 'Pompiere', serif;
+        font-size: 1.79rem;
+        letter-spacing: 0.055rem;
+        line-height: 1.8rem;
+        span{
+            display: block;
+        }
+    }
+    nav{
+        width: 40%;
+    }
+    .navFlex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li a{
+            font-size: 1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: black;
+            padding: 4px 7px;
+        }
+        // styling the nav a tags with some bacgound color with both a hover quality as well as a focus quality for accessibility purposes
+        a:hover,
+        a:focus{
+            color: white;
+            background-color: $primaryColor;
+        }
+    }
+}
