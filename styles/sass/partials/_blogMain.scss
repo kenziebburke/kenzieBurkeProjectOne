@@ -1,0 +1,61 @@
+@use './variables' as *;
+
+// SETTING THE BACKGROUND COLOR ON THE MAIN
+main{
+    background-color: $backgroundColor1;
+}
+
+.flexBlog{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// BLOG RIGHT GENERAL STYLING
+.blogRight{
+    // changing the order of the aside for desktop
+    order: 2;
+    // giving the flex children some space and setting a responsive width
+    margin-left: 5%;
+    flex-basis: 55%;
+    // setting a min width so that the flex wrap sets in!!!!!!!!!!!!!!!!!!!!!!!come back to this might not want to use due to the order thing... maybe in the responsive site the aside gets hidden into a drop down section thing
+    min-width: 400px;
+    // maybe dont need this bit come back and decide!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    .blogwrapper{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+// WORLD SECTION STYLING
+.world{
+    background-color: $backgroundColor2;
+    .bannerImgBlog{
+        // positioning the blog img 
+        position: relative;
+        top: -120px;
+        // setting a width on the img container so that flex end has space to work
+        width: 100%;
+        // moving the img over to the right of the screen
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 96%;
+            box-shadow: -27px 35px 0px 1px $borderColor;
+        }
+    }
+}
+// COMMENTS SECTION STYLING
+
+// COMMENT FORM STYLING
+
+
+// ASIDE STYLING
+aside{
+    // changing the order of the aside for desktop
+    order: 1;
+    // giving the flex children some space and setting a responsive width
+    margin-left: 5%;
+    flex-basis: 35%;
+    .asideBackground{
+        background-color: $backgroundColor2;
+    }
+}

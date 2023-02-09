@@ -27,12 +27,11 @@
 }
 
 // BLOG INDEX PREVIEW STYLING SECTION
-// COMEB BACK HERE AND WORK ON SOME FLEX WRAP TO ENSURE THAT ITS MORE RESPONSIVE REFER TO THE CODE ALONG IN CLASS FROM A FEW DAYS AGO
-// COME BACK AND WORK ON THE SHADOW BOXES FOR THE IMGS
+// COME BACK HERE AND WORK ON SOME FLEX WRAP TO ENSURE THAT ITS MORE RESPONSIVE REFER TO THE CODE ALONG IN CLASS FROM A FEW DAYS AGO
 .blogPreview{
     background-color: $backgroundColor2;
     min-height: 100vh;
-    // setting the width on everthing to get it in the proper layout
+    // setting the width on everything to get it in the proper layout
     .blog1 figure,
     .blog1 article,
     .blog2 figure,
@@ -53,6 +52,24 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+        .blog1{
+            figure{
+            position: relative;
+            top: -25px;
+            img{
+                box-shadow: 25px 25px 0px 1px $borderColor;
+            }
+            }
+        }
+        .blog2{
+            figure{
+            position: relative;
+            bottom: -40px;
+            img{
+                box-shadow: -25px 25px 0px 1px $borderColor;
+            }
+            }
+        }
 
         article{
             h2{
@@ -63,13 +80,7 @@
                 padding-bottom: 20px;
             }
             button{
-                color: $backgroundColor2;
-                background-color: $detailColor;
-                padding: 10px 12px;
-                text-transform: uppercase;
-                letter-spacing: 0.05rem;
-                font-size: 1rem;
-                border: none;
+                @include button;
             }
     }
 }
@@ -103,3 +114,55 @@
         padding-bottom: 10px;
     }
 }
+
+// POPULAR SECTION STYLING
+.popular{
+    background-color: $backgroundColor2;
+    padding: 75px 0;
+    .flexContainer{
+        flex-wrap: wrap;
+        // setting width on flex children and further styling
+        figure{
+            flex-basis: 34%;
+            min-width: 200px;
+            box-shadow: 25px 25px 0px 5px $borderColor;
+        }
+        article{
+            flex-basis: 64%;
+            padding-left: 80px;
+            h2{
+                @include h2(2.6rem);
+                padding-bottom: 10px;
+            }
+            p{
+                padding-bottom: 10px
+            }
+            button{
+                @include button;
+            }
+        }
+    }   
+}
+
+
+
+
+// GALLERY SECTION STYLING
+.gallery{
+    min-height: 60vh;
+    background-color: $backgroundColor1;
+    /* flex wrap to get a more responsive site */
+    .flexContainer{
+        padding: 75px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 20px;
+    }
+    /* setting a min width to the images to keep proper sizing and to tell the browser when to apply flex wrap */
+    ul li{
+        flex-basis:32%;
+        min-width: 200px;
+    }
+}
+

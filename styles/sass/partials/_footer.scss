@@ -1,0 +1,10 @@
+@use './variables' as *;
+
+footer{
+    background-color: $detailColor;
+    p{
+        color: $backgroundColor2;
+        text-align: center;
+        padding: 10px 0;
+    }
+}

@@ -424,6 +424,22 @@ header .headerImg {
   padding-left: 10%;
   padding-right: 10%;
 }
+.blogPreview .blog1 figure {
+  position: relative;
+  top: -25px;
+}
+.blogPreview .blog1 figure img {
+  -webkit-box-shadow: 25px 25px 0px 1px #FE6F19;
+          box-shadow: 25px 25px 0px 1px #FE6F19;
+}
+.blogPreview .blog2 figure {
+  position: relative;
+  bottom: -40px;
+}
+.blogPreview .blog2 figure img {
+  -webkit-box-shadow: -25px 25px 0px 1px #FE6F19;
+          box-shadow: -25px 25px 0px 1px #FE6F19;
+}
 .blogPreview article h2 {
   font-size: 2.1rem;
   color: #4C0341;
@@ -435,7 +451,7 @@ header .headerImg {
   padding-bottom: 20px;
 }
 .blogPreview article button {
-  color: #FFF;
+  color: #fff;
   background-color: #882C07;
   padding: 10px 12px;
   text-transform: uppercase;
@@ -471,4 +487,134 @@ header .headerImg {
   text-transform: uppercase;
   letter-spacing: 0.06rem;
   padding-bottom: 10px;
+}
+
+.popular {
+  background-color: #FFF;
+  padding: 75px 0;
+}
+.popular .flexContainer {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.popular .flexContainer figure {
+  -ms-flex-preferred-size: 34%;
+      flex-basis: 34%;
+  min-width: 200px;
+  -webkit-box-shadow: 25px 25px 0px 5px #FE6F19;
+          box-shadow: 25px 25px 0px 5px #FE6F19;
+}
+.popular .flexContainer article {
+  -ms-flex-preferred-size: 64%;
+      flex-basis: 64%;
+  padding-left: 80px;
+}
+.popular .flexContainer article h2 {
+  font-size: 2.6rem;
+  color: #4C0341;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  padding-bottom: 10px;
+}
+.popular .flexContainer article p {
+  padding-bottom: 10px;
+}
+.popular .flexContainer article button {
+  color: #fff;
+  background-color: #882C07;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.gallery {
+  min-height: 60vh;
+  background-color: #FAE5FF;
+  /* flex wrap to get a more responsive site */
+  /* setting a min width to the images to keep proper sizing and to tell the browser when to apply flex wrap */
+}
+.gallery .flexContainer {
+  padding: 75px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 20px;
+}
+.gallery ul li {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  min-width: 200px;
+}
+
+main {
+  background-color: #FAE5FF;
+}
+
+.flexBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blogRight {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 5%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  min-width: 400px;
+}
+.blogRight .blogwrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.world {
+  background-color: #FFF;
+}
+.world .bannerImgBlog {
+  position: relative;
+  top: -120px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.world .bannerImgBlog img {
+  width: 96%;
+  -webkit-box-shadow: -27px 35px 0px 1px #FE6F19;
+          box-shadow: -27px 35px 0px 1px #FE6F19;
+}
+
+aside {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-left: 5%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+aside .asideBackground {
+  background-color: #FFF;
+}
+
+footer {
+  background-color: #882C07;
+}
+footer p {
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
 }

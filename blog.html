@@ -49,101 +49,107 @@
             <h1>Blog</h1>
         </div>
     </header>
+
     <!-- MAIN -->
     <main>
-        <!-- add aside and main into one big div and flex -->
+        <!-- div to flex the ENTIRE blog contents -->
+        <div class="flexBlog">
+            <!-- DIV to act as the right hand side of the flex -->
+            <div class="blogRight">
+                <!-- WORLD SECTION -->
+                <section class="world">
+                    <div class="blogWrapper">
+                        <!-- BANNER IMG-->
+                        <figure class="bannerImgBlog">
+                            <img src="./assets/blog-post-image.jpg" alt="Two people walking side by side, both wearing complementary blue outfits. The person closest has on a pair of strappy pale golden sparkely heels. The one furthest is on white stiettos">
+                        </figure>
+                        <!-- World text -->
+                        <div class="wrapper">
+                            <h2>Shoes around the world</h2>
+                            <h3>Monday may 4th, 2019 by Dieula</h3>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur assumenda nostrum eum delectus deleniti voluptate repellat atque accusamus? Harum maxime natus nam odit reprehenderit aut aperiam voluptatibus, modi veritatis mollitia repellat consequatur qui sunt ab. Aliquam est laudantium, deleniti aperiam veniam a rem, dolor eum, quisquam sapiente dolores quod!</p>
 
-        <!-- ASIDE  -->
-        <aside class="asideBlog">
-            <figure>
-                <!-- add img here -->
-                <img src="" alt="">
-            </figure>
-            <div class="wrapper blogWrapper">
-                <h2>Any Weather</h2>
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eaque ab molestiae dolore quo asperiores sapiente quidem,</p>
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quia, qui eveniet officiis voluptatem corrupti dolorum sapiente tempore minus ad ullam, explicabo rem, ipsum quis blanditiis? Modi ipsum et ad labore perspiciatis quis rem laboriosam, ea eos laborum? Possimus, voluptas. Eaque omnis placeat provident deleniti necessitatibus, sit a consequuntur eos, quidem iusto officia hic temporibus rem nostrum ipsa suscipit minima dolore ut nisi libero voluptatum autem architecto in maiores! Quo hic temporibus maiores doloribus labore praesentium, culpa tempore mollitia cumque.</p>
 
-                <h2>Recent Posts</h2>
-                <ul>
-                    <li> Lorem ipsum dolor </li>
-                    <li> Dolor sit amet.</li>
-                    <li> Qui rem voluptates </li>
-                    <li> Dolorum excepturi at</li>
-                </ul>
-            </div>
-        </aside>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum nesciunt sit ex laudantium delectus vitae ea hic suscipit aliquid, neque commodi non, qui quod tempora expedita, ipsam reiciendis accusantium!</p>
+                        </div><!-- end of .wrapper -->
+                    </div><!-- end of .blogwrapper -->
+                </section>
 
-                <!-- edit and add to shoes around the world section -->
-        <!-- add all of left side into one big div  -->
-        <!-- BANNER IMG SECTION -->
-        <section class="bannerImgBlog">
-            <figure>
-                <!-- add img here -->
-                <img src="" alt="">
-            </figure>
-        </section>
+                <!-- COMMENTS SECTION -->
+                <section class="comments">
+                    <div class="wrapper blogWrapper">
+                        <h2>Comments</h2>
+                        <!-- comment 1 grouping -->
+                        <div class="comment1">
+                            <!-- comment 1 img -->
+                            <figure>
+                                <img src="./assets/comment-1.jpg" alt="Portrait of a guy with short hair smiling at the camera wearing a geen button down">
+                            </figure>
+                            <!-- comment 1 text -->
+                            <article>
+                                <h3>Tuesday November 21th, 2012 by Jeremy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam ratione tempore itaque necessitatibus incidunt corrupti consequuntur architecto repellendus laborum sequi tenetur laboriosam et, sit explicabo autem doloribus molestias maxime, adipisci quas harum? Ipsum quam qui reprehenderit voluptate possimus sed perspiciatis</p>
+                            </article>
+                        </div>
 
-        <!-- WORLD SECTION -->
-        <section class="world">
-            <div class="wrapper blogWrapper">
-                <h2>Shoes around the world</h2>
-                <h3>Monday may 4th, 2019 by Dieula</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur assumenda nostrum eum delectus deleniti voluptate repellat atque accusamus? Harum maxime natus nam odit reprehenderit aut aperiam voluptatibus, modi veritatis mollitia repellat consequatur qui sunt ab. Aliquam est laudantium, deleniti aperiam veniam a rem, dolor eum, quisquam sapiente dolores quod!</p>
+                        <!-- comment 2 grouping -->
+                        <div class="comment2">
+                            <!-- comment 2 img -->
+                            <figure>
+                                <img src="./assets/comment-2.jpg" alt="Portrait of a woman deadpan to the camera not smiling or forwning, She has on a green ivy crown and a jean button down shirt.">
+                            </figure>
+                            <!-- comment 2 text -->
+                            <article>
+                                <h3>Wednesday Novemeber 10th, 2019 by Julia</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam ratione tempore itaque necessitatibus incidunt corrupti consequuntur architecto repellendus laborum sequi tenetur laboriosam et, sit explicabo autem doloribus molestias maxime, adipisci quas harum? Ipsum quam qui reprehenderit voluptate possimus sed perspiciatis</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
 
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quia, qui eveniet officiis voluptatem corrupti dolorum sapiente tempore minus ad ullam, explicabo rem, ipsum quis blanditiis? Modi ipsum et ad labore perspiciatis quis rem laboriosam, ea eos laborum? Possimus, voluptas. Eaque omnis placeat provident deleniti necessitatibus, sit a consequuntur eos, quidem iusto officia hic temporibus rem nostrum ipsa suscipit minima dolore ut nisi libero voluptatum autem architecto in maiores! Quo hic temporibus maiores doloribus labore praesentium, culpa tempore mollitia cumque.</p>
+                <!-- COMMENT FORM -->
+                <section class="commentForm">
+                    <div class="wrapper blogWrapper">
+                        <form action="#" method="#" class="contactForm" name="contactForm">
+                            <!-- name input -->
+                            <label for="userName">Name</label>
+                            <input type="text" id="userName" name="userName" required="true">
 
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum nesciunt sit ex laudantium delectus vitae ea hic suscipit aliquid, neque commodi non, qui quod tempora expedita, ipsam reiciendis accusantium!</p>
-            </div>
-        </section>
+                            <!-- email input -->
+                            <label for="userEmail">Email address</label>
+                            <input type="text" id="userEmail" name="userName" required="true">
 
-        <!-- COMMENTS SECTION -->
-        <section class="comments">
-            <div class="wrapper blogWrapper">
-                <h2>Comments</h2>
-                <!-- comment 1 grouping -->
-                <div class="comment1">
+                            <!-- message input -->
+                            <label for="comment" class="sr-only">Please leave a comment</label>
+                            <textarea name="comment" id="comment" required="true" minlength="5">Comment</textarea>
+
+                            <button type="submit">Post comment</button>
+                        </form>
+                    </div><!-- end of .commentform -->
+                </div> <!-- end of .blogright -->
+            </section>
+            <!-- ASIDE  -->
+            <aside class="asideBlog">
+                <div class="asideBackground">
                     <figure>
-                        <img src="" alt="">
+                        <img src="./assets/sidebar-image.jpg" alt="Pair of black Nike running shoes with a white check on the side and white soles. The person wearing is jumping and the viewer can see under the shoe. Whater is being splashed.">
                     </figure>
-                    <article>
-                        <h3>Tuesday November 21th, 2012 by Jeremy</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam ratione tempore itaque necessitatibus incidunt corrupti consequuntur architecto repellendus laborum sequi tenetur laboriosam et, sit explicabo autem doloribus molestias maxime, adipisci quas harum? Ipsum quam qui reprehenderit voluptate possimus sed perspiciatis</p>
-                    </article>
-                </div>
+                    <div class="wrapper blogWrapper">
+                        <h2>Any Weather</h2>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eaque ab molestiae dolore quo asperiores sapiente quidem,</p>
 
-                <!-- comment 2 grouping -->
-                <div class="comment2">
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
-                    <article>
-                        <h3>Wednesday Novemeber 10th, 2019 by Julia</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam ratione tempore itaque necessitatibus incidunt corrupti consequuntur architecto repellendus laborum sequi tenetur laboriosam et, sit explicabo autem doloribus molestias maxime, adipisci quas harum? Ipsum quam qui reprehenderit voluptate possimus sed perspiciatis</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- COMMENT FORM -->
-        <section class="commentForm">
-            <div class="wrapper blogWrapper">
-                <form action="#" method="#" class="contactForm" name="contactForm">
-                    <!-- name input -->
-                    <label for="userName">Name</label>
-                    <input type="text" id="userName" name="userName" required="true">
-
-                    <!-- email input -->
-                    <label for="userEmail">Email address</label>
-                    <input type="text" id="userEmail" name="userName" required="true">
-
-                    <!-- message input -->
-                    <label for="comment" class="sr-only">Please leave a comment</label>
-                    <textarea name="comment" id="comment" required="true" minlength="5">Comment</textarea>
-
-                    <button type="submit">Post comment</button>
-                </form>
-            </div>
-        </section>
+                        <h2>Recent Posts</h2>
+                        <ul>
+                            <li> Lorem ipsum dolor </li>
+                            <li> Dolor sit amet.</li>
+                            <li> Qui rem voluptates </li>
+                            <li> Dolorum excepturi at</li>
+                        </ul>
+                    </div><!-- end of .wrapper -->
+                </div><!-- end of .asideBackground -->
+            </aside>
+        </div><!-- end of .blogFlex -->
     </main>
 
     <!-- FOOTER -->
