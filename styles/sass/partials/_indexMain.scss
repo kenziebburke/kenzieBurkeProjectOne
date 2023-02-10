@@ -109,6 +109,25 @@
         padding-right: 5%;
     }
 
+    // flexing the icons and h2 into row
+    .locationsIconFlex,
+    .communityIconFlex,
+    .blogIconFlex,
+    .phoneIconFlex{
+        display: flex;
+        i{
+            width: 20px;
+            color: $primaryColor;
+        }
+    }
+
+    .locations{
+        i{
+            height: 30px;
+            width: 30px;
+            color: $primaryColor;
+        }
+    }
     h2{
         @include h2(2.6rem);
         padding-bottom: 10px;

@@ -2,7 +2,7 @@
 @use './mixins' as *;
 
 // SETTING THE BACKGROUND COLOR ON THE MAIN
-main{
+.blogMain{
     background-color: $backgroundColor1;
 }
 
@@ -66,7 +66,7 @@ main{
 .comments{
     padding: 30px 0 100px 0;
     h2{
-        @include h2(2.6rem)
+        @include h2(2.6rem);
     }
 }
 .comment1,
@@ -93,46 +93,28 @@ main{
 // COMMENT FORM STYLING
 .commentForm{
     padding-bottom: 50px;
+    form{
+        background-color: $backgroundColor1;
+    }
     .formTop{
         display: flex;
         margin-bottom: 20px;
         input{
-            flex-basis: 48%;
-            border: 0;
-            background-color: $backgroundColor1;
-            color: gray;
-            border-bottom: 2px solid $borderColor;
-            margin-right: 3%;
+            @include input($backgroundColor1);
         }
     }
     textarea{
-        color: gray;
-        background-color: $backgroundColor1;
-        display: block;
-        border: 2px solid $borderColor;
-        width: 100%;
-        height: 40vh;
-        resize: none;
-        margin-bottom: 20px;
-        padding: 20px;
+        @include textarea($backgroundColor1);
     }
     button{
-        display: block;
-        color: #fff;
-        background-color: $primaryColor;
-        padding: 10px 0;
-        text-transform: uppercase;
-        letter-spacing: 0.05rem;
-        font-size: 1rem;
-        border: none;
-        width: 100%;
+        @include formButton($primaryColor);
     }
 }
 
 // ASIDE STYLING
 // ALSO MAYBE JUST HAVE THE ASIDE UP TOP AS LIKE A DROP DOWN LINK THING IN THE MEDIA QUERIES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-aside{
+.asideBlog{
     // changing the order of the aside for desktop
     order: 1;
     // giving the flex children some space and setting a responsive width

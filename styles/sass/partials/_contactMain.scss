@@ -1,6 +1,56 @@
 @use './variables' as *;
 @use './mixins' as *;
 
+.contactMain{
+    background-color: $backgroundColor1;
+    min-height: 80vh;
+}
+
 .contactFlex{
     display: flex;
+}
+
+// CONTACT FORM STYLING
+.contactFormSection{
+    flex-basis: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: $backgroundColor2;
+    padding: 20px 0;
+    box-shadow: -33px 35px 0px 1px $borderColor;
+    position: relative;
+    top: -150px;
+    left: 20px;
+
+    .contactFormTop{
+        display: flex;
+        margin-bottom: 20px;
+        padding-top: 60px;
+        input{
+            @include input($backgroundColor2);
+        }
+    }
+    textarea{
+        @include textarea(#fff);
+    }
+    button{
+        @include formButton($detailColor);
+    }
+}
+
+// ADDRESS STYLING
+.contactAside{
+    flex-basis: 15%;
+    margin-left: 5%;
+    padding-top: 13%;
+    h2{
+        @include h2(1.5rem);
+    }
+    .asideIcons{
+        height: 25px;
+        a{
+            color: $primaryColor;
+            margin-right: 15px;
+        }
+    }
 }

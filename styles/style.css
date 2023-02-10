@@ -258,6 +258,10 @@ ul {
   list-style: none;
 }
 
+address {
+  text-transform: none;
+}
+
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -271,7 +275,7 @@ ul {
 }
 
 h1, h2 {
-  font-family: "Pompiere", serif;
+  font-family: "Pompiere", cursive;
   margin: 0;
   padding: 0;
 }
@@ -293,12 +297,12 @@ p {
 
 .contactHeader {
   background-image: url(../assets/contact-image.jpg);
-  min-height: 70vh;
+  min-height: 80vh;
 }
 
 .blogHeader {
   background-image: url(../assets/blog-header.jpg);
-  min-height: 70vh;
+  min-height: 80vh;
 }
 
 header {
@@ -480,6 +484,26 @@ header .headerImg {
 .engagment .blog {
   padding-right: 5%;
 }
+.engagment .locationsIconFlex,
+.engagment .communityIconFlex,
+.engagment .blogIconFlex,
+.engagment .phoneIconFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.engagment .locationsIconFlex i,
+.engagment .communityIconFlex i,
+.engagment .blogIconFlex i,
+.engagment .phoneIconFlex i {
+  width: 20px;
+  color: #4C0341;
+}
+.engagment .locations i {
+  height: 30px;
+  width: 30px;
+  color: #4C0341;
+}
 .engagment h2 {
   font-size: 2.6rem;
   color: #4C0341;
@@ -551,7 +575,7 @@ header .headerImg {
   min-width: 200px;
 }
 
-main {
+.blogMain {
   background-color: #FAE5FF;
 }
 
@@ -654,6 +678,9 @@ main {
 .commentForm {
   padding-bottom: 50px;
 }
+.commentForm form {
+  background-color: #FAE5FF;
+}
 .commentForm .formTop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,6 +695,7 @@ main {
   color: gray;
   border-bottom: 2px solid #FE6F19;
   margin-right: 3%;
+  padding: 0 0 10px 10px;
 }
 .commentForm textarea {
   color: gray;
@@ -692,7 +720,7 @@ main {
   width: 100%;
 }
 
-aside {
+.asideBlog {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -701,29 +729,107 @@ aside {
       flex-basis: 25%;
   margin-top: 100px;
 }
-aside .asideBackground {
+.asideBlog .asideBackground {
   background-color: #FFF;
 }
-aside h2 {
+.asideBlog h2 {
   font-size: 1.5rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
   padding-top: 40px;
 }
-aside p {
+.asideBlog p {
   padding-bottom: 40px;
 }
-aside ul {
+.asideBlog ul {
   line-height: 1.6rem;
   padding-bottom: 20px;
   list-style: disc;
+}
+
+.contactMain {
+  background-color: #FAE5FF;
+  min-height: 80vh;
 }
 
 .contactFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contactFormSection {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #FFF;
+  padding: 20px 0;
+  -webkit-box-shadow: -33px 35px 0px 1px #FE6F19;
+          box-shadow: -33px 35px 0px 1px #FE6F19;
+  position: relative;
+  top: -150px;
+  left: 20px;
+}
+.contactFormSection .contactFormTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 60px;
+}
+.contactFormSection .contactFormTop input {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  border: 0;
+  background-color: #FFF;
+  color: gray;
+  border-bottom: 2px solid #FE6F19;
+  margin-right: 3%;
+  padding: 0 0 10px 10px;
+}
+.contactFormSection textarea {
+  color: gray;
+  background-color: #fff;
+  display: block;
+  border: 2px solid #FE6F19;
+  width: 100%;
+  height: 40vh;
+  resize: none;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.contactFormSection button {
+  display: block;
+  color: #fff;
+  background-color: #882C07;
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+}
+
+.contactAside {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  margin-left: 5%;
+  padding-top: 13%;
+}
+.contactAside h2 {
+  font-size: 1.5rem;
+  color: #4C0341;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+}
+.contactAside .asideIcons {
+  height: 25px;
+}
+.contactAside .asideIcons a {
+  color: #4C0341;
+  margin-right: 15px;
 }
 
 footer {
