@@ -1,0 +1,172 @@
+@use './variables' as *;
+// MEDIA QUERIES FOR TABLET
+@media (max-width:900px){
+    // HEADER
+    header{
+        .headerImg{
+        bottom: -15%;
+        }
+    }
+}
+
+// MEDIA QUERIES FOR MOBILE 
+@media (max-width: 510px){
+    // TYPOGRAPHY STYLES 
+    h3, h4, h5, h6, p, a, li, button{
+        font-size: 0.8rem;
+    }
+    
+    p{
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+    }
+// HEADER QUERIES 
+// figure out hamburger menu!!!!!!!!!!!!!!!!!!!
+.blogHeader{
+    background-position: 70%;
+}
+.contactHeader{
+    background-position: left;
+}
+.indexHeader{
+    background-position: 55%;
+}
+.headerNav{
+    .logoP{
+        flex-basis: 50%;
+    }
+    nav .navFlex{
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-basis: 50%;
+        align-items: flex-end;
+        ul{
+            padding: 0;
+        }
+    }
+}
+.headerImg{
+    display:none;
+}
+// INDEX QUERIES===============================
+// BLOG PREVIEW
+    .blogPreview{
+        .flexContainer{
+            flex-direction: column;
+        }
+        .blog1 figure,
+        .blog1 article,
+        .blog2 figure,
+        .blog2 article{
+        width: 100%;
+        }
+        // changing the order of the img in the second blog preview post as its more aesthetically pleasing
+        .blog2 figure{
+            order: 1;
+        }
+        .blog2 article{
+            order: 2;
+            padding-top: 60px;
+        }
+    }
+
+    // ENGAGEMENT
+    // come back and trouble shoot getInTouch issues with flex!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    .engagment{
+        .locations,
+        .community,
+        .blog,
+        .getInTouch{
+            flex-basis: 100%;
+        }
+        .locations,
+        .blog{
+        padding-right: 0;
+    }
+    }
+
+    // POPULAR
+    .popular{
+        .flexContainer{
+            figure{
+                flex-basis: 100%;
+            }
+            article{
+                flex-basis: 100%;
+                padding-top: 60px;
+                padding-left: 0;
+            }
+        }
+    }
+
+    // GALLERY
+    .gallery{
+        ul li{
+            flex-basis: 100%;
+        }
+    }
+
+
+// BLOG QUERIES================================
+.blogRight{
+    order:1;
+    flex-basis: 90%;
+}
+// WORLD 
+.world{
+    .bannerImgBlog{
+        top:-50px;
+    }
+}
+
+// COMMENTS SECTION 
+.comment1,
+.comment2{
+    figure{
+        flex-basis: 20%;
+    }
+    article{
+        flex-basis: 75%;
+    }
+}
+
+// COMMENT FORM 
+.commentForm{
+    .formTop{
+        flex-direction: column;
+        input{
+            padding: 5% 0;
+        }
+    }
+}
+
+.asideBlog{
+    order: 2;
+    flex-basis: 100%;
+    margin: 0 auto;
+    padding: 5%
+}
+// CONTACT QUERIES=============================
+.contactFlex{
+    flex-direction: column;
+    .contactAside{
+        // giving the element a full width for more visual clairity
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .contactFormSection{
+        // giving the element a full width for more visual clairity
+        flex-basis: 100%;
+        // removing the desktop positioning
+        top:0;
+        left: 0;
+        margin: 50px 0 60px 0;
+        .contactFormTop{
+            flex-direction: column;
+            input{
+                padding-top: 15px;
+            }
+        }
+    }
+}
+}

@@ -27,8 +27,10 @@
 }
 
 // BLOG INDEX PREVIEW STYLING SECTION
-// COME BACK HERE AND WORK ON SOME FLEX WRAP TO ENSURE THAT ITS MORE RESPONSIVE REFER TO THE CODE ALONG IN CLASS FROM A FEW DAYS AGO
 .blogPreview{
+    .flexContainer{
+        flex-wrap: wrap;
+    }
     background-color: $backgroundColor2;
     min-height: 100vh;
     // setting the width on everything to get it in the proper layout
@@ -36,7 +38,8 @@
     .blog1 article,
     .blog2 figure,
     .blog2 article{
-        width: 50%;
+        flex-basis: 50%;
+        min-width: 200px;
     }
 
     // giving both blogs a bit of breathing room on the bottom
@@ -86,7 +89,7 @@
 }
 
 
-// ENGAGEMNET STYLING SECTION
+// ENGAGEMENT STYLING SECTION
 // ADD IN ICONS HERE 
 .engagment{
     background-color: $backgroundColor1;
@@ -144,7 +147,9 @@
         figure{
             flex-basis: 34%;
             min-width: 200px;
-            box-shadow: 25px 25px 0px 5px $borderColor;
+            img{
+                box-shadow: 25px 25px 0px 5px $borderColor;
+            }
         }
         article{
             flex-basis: 64%;

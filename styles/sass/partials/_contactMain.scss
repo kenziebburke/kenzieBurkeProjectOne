@@ -8,21 +8,25 @@
 
 .contactFlex{
     display: flex;
+    // idealy would added a plex wrap here with a min width on the flex children.. issues with getting it not to wrap automatically.. come back and edit when you can
 }
 
 // CONTACT FORM STYLING
 .contactFormSection{
+    // giving the contact form its layout properties in percentages so its more responsive 
     flex-basis: 70%;
     margin-left: 5%;
     margin-right: 5%;
     background-color: $backgroundColor2;
     padding: 20px 0;
     box-shadow: -33px 35px 0px 1px $borderColor;
+    // positioning the contact form using relative so that it keeps its footprint
     position: relative;
     top: -150px;
-    left: 20px;
+    left: 2%;
 
     .contactFormTop{
+        // flexing the name and email side by side 
         display: flex;
         margin-bottom: 20px;
         padding-top: 60px;
