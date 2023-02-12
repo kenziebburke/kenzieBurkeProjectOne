@@ -1,36 +1,50 @@
 @use './variables' as *;
 // MEDIA QUERIES FOR TABLET
 @media (max-width:900px){
+        // TYPOGRAPHY STYLES 
+        h3, h4, h5, h6, p, a, li, button{
+            font-size: 0.8rem;
+        }
+        
+        p{
+            line-height: 1.2rem;
+            font-size: 0.8rem;
+        }
     // HEADER
+    .blogHeader{
+        background-position: 70%;
+    }
+    .contactHeader{
+        background-position: left;
+    }
+    .indexHeader{
+        background-position: 55%;
+    }
     header{
         .headerImg{
         bottom: -15%;
+        }
+    }
+
+    // INDEX
+    // BLOG PREVIEW
+    .blogPreview{
+        .blog1{
+            padding-bottom: 0;
+        }
+        .blog2{
+            figure{
+                bottom: -200px;
+            }
         }
     }
 }
 
 // MEDIA QUERIES FOR MOBILE 
 @media (max-width: 510px){
-    // TYPOGRAPHY STYLES 
-    h3, h4, h5, h6, p, a, li, button{
-        font-size: 0.8rem;
-    }
-    
-    p{
-        line-height: 1.2rem;
-        font-size: 0.8rem;
-    }
+
 // HEADER QUERIES 
 // figure out hamburger menu!!!!!!!!!!!!!!!!!!!
-.blogHeader{
-    background-position: 70%;
-}
-.contactHeader{
-    background-position: left;
-}
-.indexHeader{
-    background-position: 55%;
-}
 .headerNav{
     .logoP{
         flex-basis: 50%;
@@ -60,9 +74,13 @@
         .blog2 article{
         width: 100%;
         }
+        .blog1{
+            padding-bottom: 30px;
+        }
         // changing the order of the img in the second blog preview post as its more aesthetically pleasing
         .blog2 figure{
             order: 1;
+            position: inherit;
         }
         .blog2 article{
             order: 2;
