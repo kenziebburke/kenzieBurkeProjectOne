@@ -294,7 +294,7 @@ p {
 .indexHeader {
   background-image: url(../assets/header-image.jpg);
   min-height: 100vh;
-  background-position: center;
+  background-position: 77%;
 }
 
 .contactHeader {
@@ -312,10 +312,10 @@ p {
 header {
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px 0;
 }
 header h1 {
   margin-top: 150px;
+  padding-bottom: 150px;
   color: #4C0341;
   font-size: 4.6rem;
   letter-spacing: 0.08rem;
@@ -337,6 +337,8 @@ header .indexH1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .headerNav .logoP {
   font-family: "Pompiere", serif;
@@ -367,11 +369,17 @@ header .indexH1 {
   text-transform: uppercase;
   color: black;
   padding: 4px 7px;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .headerNav .navFlex a:hover,
 .headerNav .navFlex a:focus {
   color: white;
   background-color: #4C0341;
+}
+
+.navToggle, .navClose {
+  display: none;
 }
 
 header {
@@ -408,7 +416,15 @@ header .headerImg {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-size: 1rem;
-  border: none;
+  border: 2px solid #4C0341;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.about .wrapper button:hover,
+.about .wrapper button:focus {
+  color: #4C0341;
+  background-color: #FAE5FF;
 }
 
 .blogPreview {
@@ -468,7 +484,15 @@ header .headerImg {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-size: 1rem;
-  border: none;
+  border: 2px solid #882C07;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.blogPreview article button:hover,
+.blogPreview article button:focus {
+  color: #882C07;
+  background-color: #FFF;
 }
 
 .engagment {
@@ -503,12 +527,10 @@ header .headerImg {
 .engagment .communityIconFlex i,
 .engagment .blogIconFlex i,
 .engagment .phoneIconFlex i {
-  width: 20px;
+  font-size: 2rem;
   color: #4C0341;
 }
 .engagment .locations i {
-  height: 30px;
-  width: 30px;
   color: #4C0341;
 }
 .engagment h2 {
@@ -516,7 +538,7 @@ header .headerImg {
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
-  padding-bottom: 10px;
+  padding: 0 0 10px 15px;
 }
 
 .popular {
@@ -558,7 +580,15 @@ header .headerImg {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-size: 1rem;
-  border: none;
+  border: 2px solid #882C07;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.popular .flexContainer article button:hover,
+.popular .flexContainer article button:focus {
+  color: #882C07;
+  background-color: #FFF;
 }
 
 .gallery {
@@ -725,8 +755,16 @@ header .headerImg {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-size: 1rem;
-  border: none;
   width: 100%;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #4C0341;
+}
+.commentForm button:hover,
+.commentForm button:focus {
+  color: #4C0341;
+  background-color: #FAE5FF;
 }
 
 .asideBlog {
@@ -740,6 +778,15 @@ header .headerImg {
 }
 .asideBlog .asideBackground {
   background-color: #FFF;
+}
+.asideBlog figure {
+  position: relative;
+  right: 35%;
+  top: -20px;
+}
+.asideBlog figure img {
+  width: 130%;
+  height: 130%;
 }
 .asideBlog h2 {
   font-size: 1.5rem;
@@ -817,8 +864,16 @@ header .headerImg {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-size: 1rem;
-  border: none;
   width: 100%;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #882C07;
+}
+.contactFormSection button:hover,
+.contactFormSection button:focus {
+  color: #882C07;
+  background-color: white;
 }
 
 .contactAside {
@@ -870,6 +925,76 @@ footer p {
   header .headerImg {
     bottom: -15%;
   }
+  .logoP {
+    color: #4C0341;
+  }
+  .headerNav .navFlex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .navToggle {
+    display: inline-block;
+    font-size: 2rem;
+    color: #4C0341;
+  }
+  .navToggle:hover,
+  .navToggle:focus {
+    color: #FAE5FF;
+  }
+  .navMenu {
+    position: absolute;
+    display: none;
+    height: 50%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    overflow-x: visible;
+    -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease;
+    transition: left 0.3s ease, -webkit-box-shadow 0.3s ease;
+    transition: left 0.3s ease, box-shadow 0.3s ease;
+    transition: left 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+    background-color: #FAE5FF;
+    z-index: 1000;
+  }
+  .navMenu ul {
+    min-height: 100%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+  .navMenu ul a {
+    color: #4C0341;
+  }
+  .navMenu ul a:hover,
+  .navMenu ul a:focus {
+    color: white;
+    background-color: #4C0341;
+  }
+  .navMenu ul .navClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navMenu:target {
+    display: block;
+    right: 0;
+    top: 0;
+  }
+  .navMenu:target .navClose {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
   .blogPreview .blog1 {
     padding-bottom: 0;
   }
@@ -881,23 +1006,6 @@ footer p {
   .headerNav .logoP {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-  }
-  .headerNav nav .navFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .headerNav nav .navFlex ul {
-    padding: 0;
   }
   .headerImg {
     display: none;

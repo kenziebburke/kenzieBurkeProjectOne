@@ -21,7 +21,14 @@
             text-transform: uppercase;
             letter-spacing: 0.05rem;
             font-size: 1rem;
-            border: none;
+            border: 2px solid $primaryColor;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+        button:hover,
+        button:focus{
+            color: $primaryColor;
+            background-color: $backgroundColor1;
         }
     }
 }
@@ -84,12 +91,16 @@
             button{
                 @include button;
             }
+            button:hover,
+            button:focus{
+                color: $detailColor;
+                background-color: $backgroundColor2;
+            }
     }
 }
 
 
 // ENGAGEMENT STYLING SECTION
-// ADD IN ICONS HERE 
 .engagment{
     background-color: $backgroundColor1;
     padding: 10% 0 5% 0;
@@ -117,21 +128,19 @@
     .phoneIconFlex{
         display: flex;
         i{
-            width: 20px;
+            font-size: 2rem;
             color: $primaryColor;
         }
     }
 
     .locations{
         i{
-            height: 30px;
-            width: 30px;
             color: $primaryColor;
         }
     }
     h2{
         @include h2(2.6rem);
-        padding-bottom: 10px;
+        padding: 0  0 10px 15px;
     }
 }
 
@@ -161,6 +170,11 @@
             }
             button{
                 @include button;
+            }
+            button:hover,
+            button:focus{
+                color: $detailColor;
+                background-color: $backgroundColor2;
             }
         }
     }   

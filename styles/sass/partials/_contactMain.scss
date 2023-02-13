@@ -39,7 +39,13 @@
     }
     button{
         @include formButton($detailColor);
+        border: 2px solid $detailColor;
     }
+    button:hover,
+    button:focus{
+            color: $detailColor;
+            background-color: white;
+        }
 }
 
 // ADDRESS STYLING

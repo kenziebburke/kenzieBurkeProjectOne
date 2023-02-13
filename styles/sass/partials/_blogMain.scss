@@ -13,14 +13,10 @@
 
 // BLOG RIGHT GENERAL STYLING
 .blogRight{
-    // changing the order of the aside for desktop
     order: 2;
-    // giving the flex children some space and setting a responsive width
     margin-left: 5%;
     flex-basis: 65%;
-    // setting a min width so that the flex wrap sets in!!!!!!!!!!!!!!!!!!!!!!!come back to this might not want to use due to the order thing... maybe in the responsive site the aside gets hidden into a drop down section thing
     min-width: 400px;
-    // maybe dont need this bit come back and decide!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     .blogwrapper{
         margin: 0 auto;
         width: 90%;
@@ -44,12 +40,9 @@
         padding-bottom: 30px;
     }
     .bannerImgBlog{
-        // positioning the blog img 
         position: relative;
         top: -120px;
-        // setting a width on the img container so that flex end has space to work
         width: 100%;
-        // moving the img over to the right of the screen
         display: flex;
         justify-content: flex-end;
         img{
@@ -108,23 +101,36 @@
     }
     button{
         @include formButton($primaryColor);
+        border: 2px solid $primaryColor;
     }
+    button:hover,
+    button:focus{
+        color: $primaryColor;
+        background-color: $backgroundColor1;
+        }
 }
 
 // ASIDE STYLING
-// ALSO MAYBE JUST HAVE THE ASIDE UP TOP AS LIKE A DROP DOWN LINK THING IN THE MEDIA QUERIES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 .asideBlog{
-    // changing the order of the aside for desktop
     order: 1;
-    // giving the flex children some space and setting a responsive width
     margin-left: 5%;
     flex-basis: 25%;
     margin-top: 100px;
     .asideBackground{
         background-color: $backgroundColor2;
     }
-    // FIX IMG IN THE ASIDE TO BE BIGGER AND ALSO ADJUST POSITIONING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    figure {
+        position:relative;
+        right: 35%;
+        top: -20px;
+
+        img {
+            width: 130%;
+            height: 130%;
+        }
+    }
+
     h2{
         @include h2(1.5rem);
         padding-top: 40px;

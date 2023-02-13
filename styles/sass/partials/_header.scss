@@ -4,7 +4,7 @@
 .indexHeader{
     background-image: url(../assets/header-image.jpg);
     min-height: 100vh;
-    background-position: center;
+    background-position: 77%;
 }
 
 .contactHeader{
@@ -23,9 +23,9 @@
 header{
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 30px 0;
         h1{
             margin-top: 150px;
+            padding-bottom: 150px;
             color: $primaryColor;
             font-size: 4.6rem;
             letter-spacing: 0.08rem;
@@ -42,10 +42,12 @@ header{
         }
 }
 
-// styling the nav between the three pages, flexing the logo as well as the nav with a space in between function then again flexing the nav li to get some space between in there as well
+
 .headerNav{
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
     .logoP{
         font-family: 'Pompiere', serif;
         font-size: 1.79rem;
@@ -68,6 +70,7 @@ header{
             text-transform: uppercase;
             color: black;
             padding: 4px 7px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         // styling the nav a tags with some bacgound color with both a hover quality as well as a focus quality for accessibility purposes
         a:hover,
@@ -76,6 +79,11 @@ header{
             background-color: $primaryColor;
         }
     }
+}
+
+// hiding HAMBURGER icons
+.navToggle, .navClose{
+    display: none;
 }
 
 

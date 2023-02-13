@@ -25,6 +25,77 @@
         bottom: -15%;
         }
     }
+    .logoP{
+        color: $primaryColor;
+    }
+
+    // HAMBURGER MENU 
+    .headerNav {
+        .navFlex{
+            justify-content: space-around;
+        }
+    }
+
+    .navToggle{
+        display: inline-block;
+        font-size: 2rem;
+        color: $primaryColor;
+    }
+
+    .navToggle:hover,
+    .navToggle:focus{
+        color: $backgroundColor1;
+    }
+
+    .navMenu{
+        position: absolute;
+        display: none;
+        height: 50%;
+        // gives a scroll quality to content on the y axis
+        overflow-y: scroll;
+        // makes content visible on the x axis
+        overflow-x: visible;
+        overflow-x: visible;
+        transition: left 0.3s ease, box-shadow 0.3s ease;
+        background-color: $backgroundColor1;
+        z-index: 1000;
+        ul{
+            min-height: 100%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 0;
+            margin: 0;
+            a{
+                color: $primaryColor;
+            }
+            a:hover,
+            a:focus{
+            color: white;
+            background-color: $primaryColor;
+            }
+        .navClose{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        }
+    }
+
+    .navMenu:target{
+        .navClose{
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        display: block;
+        right: 0;
+        top: 0;
+    }
+
+
 
     // INDEX
     // BLOG PREVIEW
@@ -44,19 +115,9 @@
 @media (max-width: 510px){
 
 // HEADER QUERIES 
-// figure out hamburger menu!!!!!!!!!!!!!!!!!!!
 .headerNav{
     .logoP{
         flex-basis: 50%;
-    }
-    nav .navFlex{
-        flex-direction: column;
-        justify-content: flex-end;
-        flex-basis: 50%;
-        align-items: flex-end;
-        ul{
-            padding: 0;
-        }
     }
 }
 .headerImg{

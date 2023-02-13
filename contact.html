@@ -22,6 +22,7 @@
 
     <!-- Linking Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 
@@ -29,13 +30,41 @@
     <!-- HEADER -->
     <header class="contactHeader">
         <div class="wrapper headerNav">
-            <!-- Logo -->
+            <!-- Logo imgWrapper -->
             <div class="homeLogo">
                 <p class="logoP"> <span>Shoe</span>Kloset</p>
             </div>
 
+            <!-- hamburger menu  -->
+            <!-- code pen followed to help achieve the hamburger menu autor is Mark Caron https://codepen.io/markcaron/pen/pPZVWO -->
+            <a href="#navMenu" id="navMenuToggle" class="navToggle" aria-label="Open navigation menu">
+                <span class="sr-only">
+                    Open navigtion menu
+                </span>
+                <!-- open toggle for nav -->
+                <span>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+            </a>
+
             <!-- Nav -->
-            <nav>
+            <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
+                <!--  -->
+                <a href="#navMenuToggle"
+                id="navMenuClose"
+                class="navClose"
+                aria-label="Close navigation menu">
+                    <span class="sr-only">
+                    Close main menu
+                    </span>
+                    <!-- exit toggle for nav -->
+                    <span>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <!-- putting a title on the nav for when in hamburger better accessibility practice-->
+                <h2 class="sr-only">Navigation Menu</h2>
+                <!-- nav UL  -->
                 <ul class="navFlex">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -43,7 +72,13 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <a href="#navMenuToggle"
+            class="backdrop"
+            tabindex="-1"
+            aria-hidden="true" hidden></a>
         </div>
+
 
         <div class="wrapper">
             <!-- header h1 -->
@@ -74,7 +109,7 @@
             </aside>
 
             <!-- CONTACT FORM -->
-            <section class="contactFormSection">
+            <section class="contactFormSection" id="about">
                 <div class="wrapper contactFormWrapper">
                     <form action="#" method="#" class="contactForm" name="contactForm">
                         <div class="contactFormTop">

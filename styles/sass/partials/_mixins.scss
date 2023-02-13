@@ -7,7 +7,6 @@
     letter-spacing: 0.06rem;
 }
 
-
 @mixin button{
     color: #fff;
     background-color: #882C07;
@@ -15,7 +14,9 @@
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     font-size: 1rem;
-    border: none;
+    border: 2px solid #882C07;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 @mixin formButton($backgroundColor){
@@ -26,8 +27,9 @@
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     font-size: 1rem;
-    border: none;
     width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 @mixin textarea($backgroundColorValue){
@@ -51,3 +53,4 @@
     margin-right: 3%;
     padding: 0 0 10px 10px;
 }
+
