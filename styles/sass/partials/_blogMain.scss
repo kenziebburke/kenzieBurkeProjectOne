@@ -122,15 +122,18 @@
 
     figure {
         position:relative;
-        right: 35%;
+        right: 25%;
         top: -20px;
-
         img {
-            width: 130%;
-            height: 130%;
+            width: 110%;
+            height: 110%;
         }
     }
-
+    article{
+        i{
+            font-size: 2rem
+        }
+    }
     h2{
         @include h2(1.5rem);
         padding-top: 40px;
@@ -141,7 +144,6 @@
     ul{
         line-height: 1.6rem;
         padding-bottom: 20px;
-        // adding in list style after stripping in global styling
         list-style: disc;
     }
 }

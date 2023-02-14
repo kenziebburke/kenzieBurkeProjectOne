@@ -594,8 +594,6 @@ header .headerImg {
 .gallery {
   min-height: 60vh;
   background-color: #FAE5FF;
-  /* flex wrap to get a more responsive site */
-  /* setting a min width to the images to keep proper sizing and to tell the browser when to apply flex wrap */
 }
 .gallery .flexContainer {
   padding: 75px 0;
@@ -781,12 +779,15 @@ header .headerImg {
 }
 .asideBlog figure {
   position: relative;
-  right: 35%;
+  right: 25%;
   top: -20px;
 }
 .asideBlog figure img {
-  width: 130%;
-  height: 130%;
+  width: 110%;
+  height: 110%;
+}
+.asideBlog article i {
+  font-size: 2rem;
 }
 .asideBlog h2 {
   font-size: 1.5rem;
@@ -890,10 +891,12 @@ header .headerImg {
 }
 .contactAside .asideIcons {
   height: 25px;
+  margin-bottom: 10px;
 }
-.contactAside .asideIcons a {
+.contactAside .asideIcons i {
   color: #4C0341;
   margin-right: 15px;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -983,6 +986,10 @@ footer p {
     position: absolute;
     top: 0;
     right: 0;
+  }
+  .navMenu ul .navClose a {
+    color: #4C0341;
+    font-size: 2rem;
   }
   .navMenu:target {
     display: block;
@@ -1081,6 +1088,14 @@ footer p {
   .comment2 article {
     -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
+  }
+  .asideBlog figure {
+    top: 0;
+    right: 0;
+  }
+  .asideBlog figure img {
+    width: 100%;
+    height: auto;
   }
   .commentForm .formTop {
     -webkit-box-orient: vertical;

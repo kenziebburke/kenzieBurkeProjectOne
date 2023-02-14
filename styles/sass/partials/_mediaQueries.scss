@@ -1,15 +1,15 @@
 @use './variables' as *;
 // MEDIA QUERIES FOR TABLET
 @media (max-width:900px){
-        // TYPOGRAPHY STYLES 
-        h3, h4, h5, h6, p, a, li, button{
-            font-size: 0.8rem;
-        }
-        
-        p{
-            line-height: 1.2rem;
-            font-size: 0.8rem;
-        }
+    // TYPOGRAPHY STYLES 
+    h3, h4, h5, h6, p, a, li, button{
+        font-size: 0.8rem;
+    }
+            
+    p{
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+    }
     // HEADER
     .blogHeader{
         background-position: 70%;
@@ -51,9 +51,7 @@
         position: absolute;
         display: none;
         height: 50%;
-        // gives a scroll quality to content on the y axis
         overflow-y: scroll;
-        // makes content visible on the x axis
         overflow-x: visible;
         overflow-x: visible;
         transition: left 0.3s ease, box-shadow 0.3s ease;
@@ -79,6 +77,10 @@
             position: absolute;
             top: 0;
             right: 0;
+            a{
+                color: $primaryColor;
+                font-size: 2rem;
+            }
         }
         }
     }
@@ -138,7 +140,6 @@
         .blog1{
             padding-bottom: 30px;
         }
-        // changing the order of the img in the second blog preview post as its more aesthetically pleasing
         .blog2 figure{
             order: 1;
             position: inherit;
@@ -150,7 +151,6 @@
     }
 
     // ENGAGEMENT
-    // come back and trouble shoot getInTouch issues with flex!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     .engagment{
         .locations,
         .community,
@@ -209,6 +209,18 @@
     }
 }
 
+// ASIDE
+.asideBlog{
+    figure{
+        top: 0;
+        right: 0;
+        img{
+            width:100%;
+            height: auto;
+        }
+    }
+}
+
 // COMMENT FORM 
 .commentForm{
     .formTop{
@@ -229,14 +241,11 @@
 .contactFlex{
     flex-direction: column;
     .contactAside{
-        // giving the element a full width for more visual clairity
         flex-basis: 100%;
         text-align: center;
     }
     .contactFormSection{
-        // giving the element a full width for more visual clairity
         flex-basis: 100%;
-        // removing the desktop positioning
         top:0;
         left: 0;
         margin: 50px 0 60px 0;

@@ -1,6 +1,6 @@
 @use './variables' as *;
 
-// setting the varying header images between the index, contact and blog page
+// HEADER STYLING
 .indexHeader{
     background-image: url(../assets/header-image.jpg);
     min-height: 100vh;
@@ -19,7 +19,7 @@
     background-position: center;
 }
 
-// fixing the background image visibility and styling on each page
+
 header{
         background-repeat: no-repeat;
         background-size: cover;
@@ -32,7 +32,6 @@ header{
             text-transform: uppercase;
             text-align: center;
         }
-        // index h1 styling 
         .indexH1{
             font-size: 5.5rem;
             width: 40%;
@@ -72,7 +71,6 @@ header{
             padding: 4px 7px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-        // styling the nav a tags with some bacgound color with both a hover quality as well as a focus quality for accessibility purposes
         a:hover,
         a:focus{
             color: white;
