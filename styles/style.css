@@ -1065,10 +1065,6 @@ footer p {
     padding-top: 60px;
     padding-left: 0;
   }
-  .gallery ul li {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
   .blogRight {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
