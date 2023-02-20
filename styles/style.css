@@ -378,6 +378,10 @@ header .indexH1 {
   background-color: #4C0341;
 }
 
+.navIcons {
+  display: none;
+}
+
 .navToggle, .navClose {
   display: none;
 }
@@ -610,6 +614,64 @@ header .headerImg {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
   min-width: 200px;
+}
+
+#modalBackground {
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modal {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  height: 500px;
+  -webkit-box-shadow: 25px 25px 0px 1px #FE6F19;
+          box-shadow: 25px 25px 0px 1px #FE6F19;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+#modal figure {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin-right: 5%;
+  margin-left: 2.5%;
+}
+#modal article {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 2.5%;
+}
+#modal button {
+  font-size: 1.5rem;
+  border: none;
+  background-color: white;
+  color: #4C0341;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  -webkit-transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;
+  cursor: pointer;
+}
+#modal button:hover,
+#modal button:focus {
+  font-size: 2rem;
 }
 
 .blogMain {
@@ -931,76 +993,25 @@ footer p {
   .logoP {
     color: #4C0341;
   }
-  .headerNav .navFlex {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .navToggle {
-    display: inline-block;
-    font-size: 2rem;
-    color: #4C0341;
-  }
-  .navToggle:hover,
-  .navToggle:focus {
-    color: #FAE5FF;
-  }
-  .navMenu {
-    position: absolute;
-    display: none;
-    height: 50%;
-    overflow-y: scroll;
-    overflow-x: visible;
-    overflow-x: visible;
-    -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease;
-    transition: left 0.3s ease, -webkit-box-shadow 0.3s ease;
-    transition: left 0.3s ease, box-shadow 0.3s ease;
-    transition: left 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
-    background-color: #FAE5FF;
-    z-index: 1000;
-  }
-  .navMenu ul {
-    min-height: 100%;
-    width: 100%;
+  .navFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding: 0;
-    margin: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .navMenu ul a {
-    color: #4C0341;
-  }
-  .navMenu ul a:hover,
-  .navMenu ul a:focus {
-    color: white;
-    background-color: #4C0341;
-  }
-  .navMenu ul .navClose {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .navMenu ul .navClose a {
-    color: #4C0341;
-    font-size: 2rem;
-  }
-  .navMenu:target {
+  .navIcons {
     display: block;
-    right: 0;
-    top: 0;
+    position: fixed;
+    z-index: 10;
+    top: 1%;
+    right: 1%;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
-  .navMenu:target .navClose {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  .navIcons .fa-times {
+    display: none;
   }
   .blogPreview .blog1 {
     padding-bottom: 0;

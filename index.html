@@ -27,48 +27,20 @@
                 <p class="logoP"> <span>Shoe</span>Kloset</p>
             </div>
 
-            <!-- hamburger menu  -->
-            <!-- code pen followed to help achieve the hamburger menu autor is Mark Caron https://codepen.io/markcaron/pen/pPZVWO -->
-            <a href="#navMenu" id="navMenuToggle" class="navToggle" aria-label="Open navigation menu">
-                <span class="sr-only">
-                    Open navigtion menu
-                </span>
-                <!-- open toggle for nav -->
-                <span>
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </span>
-            </a>
-
             <!-- Nav -->
             <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
-                <!--  -->
-                <a href="#navMenuToggle"
-                id="navMenuClose"
-                class="navClose"
-                aria-label="Close navigation menu">
-                    <span class="sr-only">
-                    Close main menu
-                    </span>
-                    <!-- exit toggle for nav -->
-                    <span>
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </span>
-                </a>
-                <!-- putting a title on the nav for when in hamburger better accessibility practice-->
-                <h2 class="sr-only">Navigation Menu</h2>
                 <!-- nav UL  -->
                 <ul class="navFlex">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="menuItem"><a href="index.html">Home</a></li>
+                    <li class="menuItem"><a href="#about">About</a></li>
+                    <li class="menuItem"><a href="blog.html">Blog</a></li>
+                    <li class="menuItem"><a href="contact.html">Contact</a></li>
                 </ul>
+                <button class="navIcons">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
             </nav>
-
-            <a href="#navMenuToggle"
-            class="backdrop"
-            tabindex="-1"
-            aria-hidden="true" hidden></a>
         </div>
 
             <!-- header h1 -->
@@ -87,12 +59,27 @@
     <main>
         <!-- ABOUT SECTION -->
         <section class="about" id="about">
+                    <!-- Modal for about button -->
+                    <div id="modalBackground">
+                        <div id="modal">
+                            <figure>
+                            <img src=https://picsum.photos/300/300 alt="place holder img">
+                            </figure>
+                            <article>
+                                <h2>Our Founder</h2>
+                                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quia distinctio sint culpa aliquam commodi eos cumque possimus, sapiente vel.
+                                </p>
+                            </article>
+                            <button id="closeModal"> X </button>
+                        </div><!-- end of .modal -->
+                    </div> <!-- end of #modalBackground -->
             <div class="wrapper">
                 <h2>What is under the sea</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid quas totam repellat, cum exercitationem voluptatum amet, veniam adipisci modi odio obcaecati inventore cupiditate deserunt commodi sit molestias eaque! Corrupti?</p>
-                <button>Find out more</button>
-            </div>
+                <button id="openModal">Find out more</button>
+            </div> <!-- end of .wrapper -->
         </section>
+
 
         <!-- BLOG PREVIEW SECTION -->
         <section class="blogPreview">
@@ -206,5 +193,7 @@
             <p>Copyright © 2019 Juno College</p>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -30,74 +30,22 @@
     }
 
     // HAMBURGER MENU 
-    .headerNav {
-        .navFlex{
-            justify-content: space-around;
-        }
+    .navFlex{
+        flex-direction: column;
+        justify-content: space-around;
     }
-
-    .navToggle{
-        display: inline-block;
-        font-size: 2rem;
-        color: $primaryColor;
-    }
-
-    .navToggle:hover,
-    .navToggle:focus{
-        color: $backgroundColor1;
-    }
-
-    .navMenu{
-        position: absolute;
+    .navIcons{
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 1%;
+    right: 1%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    .fa-times{
         display: none;
-        height: 50%;
-        overflow-y: scroll;
-        overflow-x: visible;
-        overflow-x: visible;
-        transition: left 0.3s ease, box-shadow 0.3s ease;
-        background-color: $backgroundColor1;
-        z-index: 1000;
-        ul{
-            min-height: 100%;
-            width: 100%;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-end;
-            padding: 0;
-            margin: 0;
-            a{
-                color: $primaryColor;
-            }
-            a:hover,
-            a:focus{
-            color: white;
-            background-color: $primaryColor;
-            }
-        .navClose{
-            position: absolute;
-            top: 0;
-            right: 0;
-            a{
-                color: $primaryColor;
-                font-size: 2rem;
-            }
-        }
-        }
     }
-
-    .navMenu:target{
-        .navClose{
-            display: block;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-        display: block;
-        right: 0;
-        top: 0;
     }
-
-
 
     // INDEX
     // BLOG PREVIEW
