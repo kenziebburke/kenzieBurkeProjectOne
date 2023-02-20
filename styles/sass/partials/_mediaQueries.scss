@@ -32,19 +32,51 @@
     // HAMBURGER MENU 
     .navFlex{
         flex-direction: column;
-        justify-content: space-around;
-    }
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: $backgroundColor1;
+        color: $primaryColor;
+        padding-top: 4rem;
+        position: fixed;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        li{
+            margin: 10px;
+            a{
+                font-size: 2rem;
+                color: white;
+                background-color: $primaryColor;
+                transition: all .2s ease-in-out; 
+            }
+            a:hover,
+            a:focus{
+                transform: scale(1.1); 
+            }
+        }
+        }
+
     .navIcons{
+    background-color: inherit;
+    border: none;
     display: block;
     position: fixed;
     z-index: 10;
-    top: 1%;
-    right: 1%;
+    top: 4%;
+    right: 6%;
     font-size: 1.5rem;
     cursor: pointer;
     .fa-times{
         display: none;
     }
+    }
+
+    .shown {
+        transform: translateX(50%);
     }
 
     // INDEX

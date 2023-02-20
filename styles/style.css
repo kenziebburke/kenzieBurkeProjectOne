@@ -352,7 +352,8 @@ header .indexH1 {
 .headerNav nav {
   width: 40%;
 }
-.headerNav .navFlex {
+
+.navFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,7 +364,7 @@ header .indexH1 {
       -ms-flex-align: center;
           align-items: center;
 }
-.headerNav .navFlex li a {
+.navFlex li a {
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -372,17 +373,13 @@ header .indexH1 {
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-.headerNav .navFlex a:hover,
-.headerNav .navFlex a:focus {
+.navFlex a:hover,
+.navFlex a:focus {
   color: white;
   background-color: #4C0341;
 }
 
 .navIcons {
-  display: none;
-}
-
-.navToggle, .navClose {
   display: none;
 }
 
@@ -616,11 +613,18 @@ header .headerImg {
   min-width: 200px;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 #modalBackground {
   z-index: 10;
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.1);
   display: none;
   -webkit-box-pack: center;
@@ -998,20 +1002,60 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #FAE5FF;
+    color: #4C0341;
+    padding-top: 4rem;
+    position: fixed;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  .navFlex li {
+    margin: 10px;
+  }
+  .navFlex li a {
+    font-size: 2rem;
+    color: white;
+    background-color: #4C0341;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .navFlex li a:hover,
+  .navFlex li a:focus {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .navIcons {
+    background-color: inherit;
+    border: none;
     display: block;
     position: fixed;
     z-index: 10;
-    top: 1%;
-    right: 1%;
+    top: 4%;
+    right: 6%;
     font-size: 1.5rem;
     cursor: pointer;
   }
   .navIcons .fa-times {
     display: none;
+  }
+  .shown {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
   .blogPreview .blog1 {
     padding-bottom: 0;
