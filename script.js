@@ -1,4 +1,4 @@
-// HAMBURGER MENU
+// HAMBURGER MENU ===============================
 // declaring variables
 const navMenu = document.querySelector('.navFlex');
 
@@ -29,7 +29,7 @@ navIcons.addEventListener("click", menuToggle);
 
 
 
-// MODALS
+// MODALS===========================================
 
 // MODAL 1
 // declaring variables
@@ -57,7 +57,7 @@ const  closeModal = function () {
 modalCloseButton.addEventListener ('click', closeModal);
 
 
-// MODAL2
+// MODAL2++++++++++++++++++++++++++++++++++++++++
 // declaring variables
 const modalButtonOpenTwo = document.getElementById('openModalTwo');
 
@@ -79,3 +79,56 @@ const  closeModalTwo = function () {
     bodyHTML.classList.remove('stop-scrolling')
 }
 modalCloseButtonTwo.addEventListener ('click', closeModalTwo);
+
+
+// MODAL3++++++++++++++++++++++++++++++++++++++++
+// declaring variables
+const modalButtonOpenThree = document.getElementById('openModalThree');
+
+
+const modalWindowThree = document.getElementById('modalBackgroundThree');
+
+const modalCloseButtonThree = document.getElementById('closeModalThree');
+
+// open modal
+const openModalThree = function (){
+    modalWindowThree.style.display = 'flex';
+    bodyHTML.classList.add('stop-scrolling')
+}
+
+modalButtonOpenThree.addEventListener('click', openModalThree);
+
+
+// exit modal
+const  closeModalThree = function () {
+    modalWindowThree.style.display = 'none';
+    bodyHTML.classList.remove('stop-scrolling')
+}
+modalCloseButtonThree.addEventListener ('click', closeModalThree);
+
+
+
+// MODAL4++++++++++++++++++++++++++++++++++++++++
+// declaring variables
+const modalButtonOpenFour = document.getElementById('openModalFour');
+
+
+const modalWindowFour = document.getElementById('modalBackgroundFour');
+
+const modalCloseButtonFour = document.getElementById('closeModalFour');
+
+// open modal
+const openModalFour = function (){
+    modalWindowFour.style.display = 'flex';
+    bodyHTML.classList.add('stop-scrolling')
+}
+
+modalButtonOpenFour.addEventListener('click', openModalFour);
+
+
+// exit modal
+const  closeModalFour = function () {
+    modalWindowFour.style.display = 'none';
+    bodyHTML.classList.remove('stop-scrolling')
+}
+modalCloseButtonFour.addEventListener ('click', closeModalFour);
