@@ -1,4 +1,5 @@
 @use './variables' as *;
+@use './mixins' as *;
 
 .stop-scrolling {
     height: 100%;
@@ -22,24 +23,87 @@
     max-width: 600px;
     width: 100%;
     background-color: white;
-    height: 500px;
     box-shadow: 25px 25px 0px 1px $borderColor;
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
-    figure{
-        flex-basis: 40%;
-        margin-right: 5%;
-        margin-left: 2.5%;
-    }
     article{
-        flex-basis: 50%;
-        margin-right: 2.5%;
+        h2{
+            @include h2(2.1rem);
+        }
+        h3{
+            margin-top: 10px;
+        }
+        flex-basis: 100%;
+        margin: 10%;
+        text-align: center;
+        figure{
+            flex-basis: 80%;
+        }
     }
     button{
         font-size: 1.5rem;
         border: none;
         background-color: white;
+        color: $primaryColor;
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        transition: font-size 0.3s ease;
+        cursor: pointer;
+    }
+    button:hover,
+    button:focus{
+        font-size: 2rem;
+    }
+}
+
+// MODAL2
+#modalBackgroundTwo{
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalTwo{
+    max-width: 600px;
+    width: 100%;
+    height: 80vh;
+    background-image: url(../assets/js/newAdditions.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 25px 25px 0px 1px $borderColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    article{
+        flex-basis: 100%;
+        margin: 10% 20%;
+        padding: 10%;
+        text-align: center;
+        background-color: $backgroundColor2;
+        opacity: .8;
+        h2{
+            @include h2(2.1rem);
+        }
+        h3{
+            margin-top: 10px;
+        }
+    }
+    button{
+        font-size: 1.5rem;
+        border: none;
+        background-color: inherit;
         color: $primaryColor;
         position: absolute;
         top: 1%;
