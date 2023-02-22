@@ -60,24 +60,27 @@
         <!-- ABOUT SECTION -->
         <section class="about" id="about">
                     <!-- Modal 1-->
-                    <div id="modalBackground">
-                        <div id="modal">
-                            <article>
+                    <div id="modalBackgroundOne">
+                        <div class="modal" id="modalOne">
+                            <article class="flexContainer">
+                                    <div class="articleLeft">
+                                    <figure>
+                                        <img src="./assets/js/founder.jpg" alt="headshot of a friendly looking woman smiling.">
+                                    </figure>
+                                    <h3> Hannah Delucry Founder of Shoe Kloset</h3>
+                                    <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quia distinctio sint culpa aliquam commodi eos cumque possimus, sapiente vel.""
+                                    </p>
+                                </div>
                                 <h2>Our Founder</h2>
-                                <figure>
-                                    <img src="./assets/js/founder.jpg" alt="headshot of a friendly looking woman smiling.">
-                                </figure>
-                                <h3> Hannah Delucry Founded Shoe Kloset in 2012</h3>
-                                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quia distinctio sint culpa aliquam commodi eos cumque possimus, sapiente vel.
-                                </p>
                             </article>
-                            <button id="closeModal"> X </button>
+                            <!-- add aria label for X bcc who is to say that makes sense -->
+                            <button id="closeModalOne"> X </button>
                         </div><!-- end of .modal -->
                     </div> <!-- end of #modalBackground -->
             <div class="wrapper">
                 <h2>What is under the sea</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid quas totam repellat, cum exercitationem voluptatum amet, veniam adipisci modi odio obcaecati inventore cupiditate deserunt commodi sit molestias eaque! Corrupti?</p>
-                <button id="openModal">Find out more</button>
+                <button id="openModalOne">Find out more</button>
             </div> <!-- end of .wrapper -->
         </section>
 
@@ -98,7 +101,7 @@
                 </div>
                 <!-- Modal 2 -->
                 <div id="modalBackgroundTwo">
-                    <div id="modalTwo">
+                    <div class="modal" id="modalTwo">
                         <article>
                             <h2>Sale 30% off</h2>
                             <h3>Just added new fresh deals! Check out our blog page to learn more about how to style your new shoe! </h3>
@@ -118,11 +121,18 @@
                     </article>
                     <!-- Modal 3 -->
                     <div id="modalBackgroundThree">
-                        <div id="modalThree">
-                            <article>
-                                <h2>Get 50% off Select Styles</h2>
-                                <h3>While supplies last, see blog for details!</h3>
-                            </article>
+                        <div class="modal" id="modalThree">
+                            <aside>
+                                <h2>Join our mailing list</h2>
+                                <form action="">
+                                    <h3>Get 50% off Select Styles</h3>
+                                    <label for="userEmail" class="sr-only">Email address</label>
+                                    <div class="flexModalForm">
+                                        <input type="text" id="userEmail" name="userEmail" placeholder="Email adress" required="true">
+                                        <button type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </aside>
                             <button id="closeModalThree"> X </button>
                         </div><!-- end of .modal -->
                     </div> <!-- end of #modalBackground --> 
@@ -198,11 +208,18 @@
             </div>
             <!-- Modal 4 -->
             <div id="modalBackgroundFour">
-                <div id="modalFour">
+                <div class="modal" id="modalFour">
                     <article>
-                        <h2>Get 50% off Select Styles</h2>
-                        <h3>While supplies last, see blog for details!</h3>
+                        <h2>Follow us to find out more!</h2>
+                        <div class="modalIcons">
+                            <i class="fa fa-facebook" aria-hidden="true" aria-label="facebook"></i>
+                            <i class="fa fa-instagram" aria-hidden="true" aria-label="instagram"></i>
+                            <i class="fa fa-twitter" aria-hidden="true" aria-label="twitter"></i>
+                        </div>
                     </article>
+                    <figure>
+                        <img src="./assets/js/popular.jpg" alt="Model wearing black high heels with blue skinny jeans posing on a beach">
+                    </figure>
                     <button id="closeModalFour"> X </button>
                 </div><!-- end of .modal -->
             </div> <!-- end of #modalBackground --> 

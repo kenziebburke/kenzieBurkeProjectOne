@@ -29,106 +29,76 @@ navIcons.addEventListener("click", menuToggle);
 
 
 
-// MODALS===========================================
+// MODALS
 
 // MODAL 1
 // declaring variables
-const modalButtonOpen = document.getElementById('openModal');
+const bodyHTML = document.querySelector('body'); // select the document's body element
 
-const modalWindow = document.getElementById('modalBackground');
+// variables for modal 1
+const openModalOne = document.getElementById('openModalOne'); // select the open button element for our first modal
+const modalBackgroundOne = document.getElementById('modalBackgroundOne'); // select our first modal element
+const closeModalOne = document.getElementById('closeModalOne'); // select the close button element for our first modal
 
-const modalCloseButton = document.getElementById('closeModal');
 
-const bodyHTML = document.querySelector('body');
+// variables for modal 2
+const openModalTwo  = document.getElementById('openModalTwo'); // select the open button element for our second modal
+const modalBackgroundTwo = document.getElementById('modalBackgroundTwo'); // select our second modal element
+const closeModalTwo = document.getElementById('closeModalTwo'); // select the close button element for our second modal
+
+
+// variables for modal 3
+const openModalThree = document.getElementById('openModalThree');
+const modalBackgroundThree = document.getElementById('modalBackgroundThree');
+const closeModalThree = document.getElementById('closeModalThree');
+
+
+// variables for modal 4
+const openModalFour = document.getElementById('openModalFour');
+const modalBackfroundFour = document.getElementById('modalBackgroundFour');
+const closeModalFour = document.getElementById('closeModalFour');
+
 
 // open modal
-const openModal = function (){
-    modalWindow.style.display = 'flex';
-    bodyHTML.classList.add('stop-scrolling')
-}
-modalButtonOpen.addEventListener('click', openModal);
-
-
+const openModal = function(modal) {
+    modal.style.display = 'flex';
+    bodyHTML.classList.add('stop-scrolling');
+};
 // exit modal
-const  closeModal = function () {
-    modalWindow.style.display = 'none';
-    bodyHTML.classList.remove('stop-scrolling')
-}
-modalCloseButton.addEventListener ('click', closeModal);
+const closeModal = function(modal) {
+    modal.style.display = 'none';
+    bodyHTML.classList.remove('stop-scrolling');
+};
 
 
-// MODAL2++++++++++++++++++++++++++++++++++++++++
-// declaring variables
-const modalButtonOpenTwo = document.getElementById('openModalTwo');
+// event listener for modal 1
+openModalOne.addEventListener('click', function() {
+    openModal(modalBackgroundOne);
+});
+closeModalOne.addEventListener('click', function() {
+    closeModal(modalBackgroundOne);
+});
 
-const modalWindowTwo = document.getElementById('modalBackgroundTwo');
+// event listener for modal 2
+openModalTwo.addEventListener('click', function() {
+    openModal(modalBackgroundTwo);
+});
+closeModalTwo.addEventListener ('click', function() {
+    closeModal(modalBackgroundTwo);
+});
 
-const modalCloseButtonTwo = document.getElementById('closeModalTwo');
+// event listener for modal 3
+openModalThree.addEventListener('click', function() {
+    openModal(modalBackgroundThree);
+});
+closeModalThree.addEventListener ('click', function() {
+    closeModal(modalBackgroundThree);
+});
 
-// open modal
-const openModalTwo = function (){
-    modalWindowTwo.style.display = 'flex';
-    bodyHTML.classList.add('stop-scrolling')
-}
-modalButtonOpenTwo.addEventListener('click', openModalTwo);
-
-
-// exit modal
-const  closeModalTwo = function () {
-    modalWindowTwo.style.display = 'none';
-    bodyHTML.classList.remove('stop-scrolling')
-}
-modalCloseButtonTwo.addEventListener ('click', closeModalTwo);
-
-
-// MODAL3++++++++++++++++++++++++++++++++++++++++
-// declaring variables
-const modalButtonOpenThree = document.getElementById('openModalThree');
-
-
-const modalWindowThree = document.getElementById('modalBackgroundThree');
-
-const modalCloseButtonThree = document.getElementById('closeModalThree');
-
-// open modal
-const openModalThree = function (){
-    modalWindowThree.style.display = 'flex';
-    bodyHTML.classList.add('stop-scrolling')
-}
-
-modalButtonOpenThree.addEventListener('click', openModalThree);
-
-
-// exit modal
-const  closeModalThree = function () {
-    modalWindowThree.style.display = 'none';
-    bodyHTML.classList.remove('stop-scrolling')
-}
-modalCloseButtonThree.addEventListener ('click', closeModalThree);
-
-
-
-// MODAL4++++++++++++++++++++++++++++++++++++++++
-// declaring variables
-const modalButtonOpenFour = document.getElementById('openModalFour');
-
-
-const modalWindowFour = document.getElementById('modalBackgroundFour');
-
-const modalCloseButtonFour = document.getElementById('closeModalFour');
-
-// open modal
-const openModalFour = function (){
-    modalWindowFour.style.display = 'flex';
-    bodyHTML.classList.add('stop-scrolling')
-}
-
-modalButtonOpenFour.addEventListener('click', openModalFour);
-
-
-// exit modal
-const  closeModalFour = function () {
-    modalWindowFour.style.display = 'none';
-    bodyHTML.classList.remove('stop-scrolling')
-}
-modalCloseButtonFour.addEventListener ('click', closeModalFour);
+// event listener for modal 4
+openModalFour.addEventListener('click', function() {
+    openModal(modalBackgroundFour);
+});
+closeModalFour.addEventListener ('click', function() {
+    closeModal(modalBackgroundFour);
+});

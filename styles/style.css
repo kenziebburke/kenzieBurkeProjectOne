@@ -618,7 +618,7 @@ header .headerImg {
   overflow: hidden;
 }
 
-#modalBackground {
+#modalBackgroundOne {
   z-index: 10;
   height: 100vh;
   width: 100vw;
@@ -635,11 +635,9 @@ header .headerImg {
           align-items: center;
 }
 
-#modal {
+#modalOne {
   max-width: 600px;
   width: 100%;
-  -webkit-box-shadow: 25px 25px 0px 1px #FE6F19;
-          box-shadow: 25px 25px 0px 1px #FE6F19;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,27 +649,33 @@ header .headerImg {
           align-items: center;
   position: relative;
   background-color: #FFF;
+  -webkit-box-shadow: 25px 25px 0px 1px #4C0341;
+          box-shadow: 25px 25px 0px 1px #4C0341;
 }
-#modal article {
+#modalOne article {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin: 10%;
-  text-align: center;
 }
-#modal article h2 {
+#modalOne article h2 {
   font-size: 2.1rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
-#modal article h3 {
-  margin-top: 10px;
+#modalOne article h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-#modal article figure {
+#modalOne article figure {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
 }
-#modal button {
+#modalOne button {
   font-size: 1.5rem;
   border: none;
   background-color: inherit;
@@ -683,8 +687,8 @@ header .headerImg {
   transition: font-size 0.3s ease;
   cursor: pointer;
 }
-#modal button:hover,
-#modal button:focus {
+#modalOne button:hover,
+#modalOne button:focus {
   font-size: 2rem;
 }
 
@@ -708,8 +712,6 @@ header .headerImg {
 #modalTwo {
   max-width: 600px;
   width: 100%;
-  -webkit-box-shadow: 25px 25px 0px 1px #FE6F19;
-          box-shadow: 25px 25px 0px 1px #FE6F19;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,6 +723,8 @@ header .headerImg {
           align-items: center;
   position: relative;
   height: 80vh;
+  -webkit-box-shadow: 25px 25px 0px 1px #882C07;
+          box-shadow: 25px 25px 0px 1px #882C07;
   background-image: url(../assets/js/newAdditions.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -781,8 +785,6 @@ header .headerImg {
 #modalThree {
   max-width: 600px;
   width: 100%;
-  -webkit-box-shadow: 25px 25px 0px 1px #FE6F19;
-          box-shadow: 25px 25px 0px 1px #FE6F19;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,30 +796,65 @@ header .headerImg {
           align-items: center;
   position: relative;
   height: 80vh;
+  -webkit-box-shadow: 25px 25px 0px 1px #882C07;
+          box-shadow: 25px 25px 0px 1px #882C07;
   background-image: url(../assets/js/tooMany.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-#modalThree article {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+#modalThree h2 {
+  font-size: 2.1rem;
+  color: #4C0341;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  padding-bottom: 10px;
+}
+#modalThree h3 {
+  padding: 5px 0 30px 0;
+}
+#modalThree aside {
   margin: 10% 20%;
   padding: 10%;
   text-align: center;
   background-color: #FFF;
   opacity: 0.8;
 }
-#modalThree article h2 {
-  font-size: 2.1rem;
-  color: #4C0341;
+#modalThree form .flexModalForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#modalThree form input {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  border: 0;
+  background-color: inherit;
+  color: gray;
+  border-bottom: 2px solid #FE6F19;
+  margin-right: 3%;
+  padding: 0 0 10px 10px;
+}
+#modalThree form button {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  color: #fff;
+  background-color: #FE6F19;
+  padding: 10px 12px;
   text-transform: uppercase;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  border: 2px solid #FE6F19;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
-#modalThree article h3 {
-  margin-top: 10px;
+#modalThree form button:hover,
+#modalThree form button:focus {
+  color: #FE6F19;
+  background-color: #FFF;
 }
-#modalThree button {
+#modalThree #closeModalThree {
   font-size: 1.5rem;
   border: none;
   background-color: inherit;
@@ -829,8 +866,8 @@ header .headerImg {
   transition: font-size 0.3s ease;
   cursor: pointer;
 }
-#modalThree button:hover,
-#modalThree button:focus {
+#modalThree #closeModalThree:hover,
+#modalThree #closeModalThree:focus {
   font-size: 2rem;
 }
 
@@ -854,8 +891,6 @@ header .headerImg {
 #modalFour {
   max-width: 600px;
   width: 100%;
-  -webkit-box-shadow: 25px 25px 0px 1px #FE6F19;
-          box-shadow: 25px 25px 0px 1px #FE6F19;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,16 +901,25 @@ header .headerImg {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  height: 80vh;
+  -webkit-box-shadow: 25px 25px 0px 1px #882C07;
+          box-shadow: 25px 25px 0px 1px #882C07;
   background-color: #FFF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 #modalFour article {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin: 10% 20%;
-  padding: 10%;
+  margin: 10% 10% 0 10%;
+  padding: 10% 10% 0 10%;
   text-align: center;
-  background-color: #FFF;
+  background-color: #FAE5FF;
   opacity: 0.8;
+  position: relative;
+  top: 150px;
 }
 #modalFour article h2 {
   font-size: 2.1rem;
@@ -883,8 +927,16 @@ header .headerImg {
   text-transform: uppercase;
   letter-spacing: 0.06rem;
 }
-#modalFour article h3 {
-  margin-top: 10px;
+#modalFour article .modalIcons {
+  padding-top: 40px;
+}
+#modalFour article .modalIcons i {
+  color: #4C0341;
+  font-size: 1.5rem;
+}
+#modalFour figure {
+  height: 160%;
+  overflow-y: hidden;
 }
 #modalFour button {
   font-size: 1.5rem;
