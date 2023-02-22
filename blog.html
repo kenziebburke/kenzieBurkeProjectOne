@@ -70,7 +70,7 @@
                             <img src="./assets/blog-post-image.jpg" alt="Two people walking side by side, both wearing complementary blue outfits. The person closest has on a pair of strappy pale golden sparkely heels. The one furthest is on white stiettos">
                         </figure>
                         <!-- World text -->
-                        <div class="wrapper">
+                        <article class="wrapper">
                             <h2>Shoes around the world</h2>
                             <h3>Monday may 4th, 2019 by Dieula</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur assumenda nostrum eum delectus deleniti voluptate repellat atque accusamus? Harum maxime natus nam odit reprehenderit aut aperiam voluptatibus, modi veritatis mollitia repellat consequatur qui sunt ab. Aliquam est laudantium, deleniti aperiam veniam a rem, dolor eum, quisquam sapiente dolores quod!</p>
@@ -78,39 +78,38 @@
                             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quia, qui eveniet officiis voluptatem corrupti dolorum sapiente tempore minus ad ullam, explicabo rem, ipsum quis blanditiis? Modi ipsum et ad labore perspiciatis quis rem laboriosam, ea eos laborum? Possimus, voluptas. Eaque omnis placeat provident deleniti necessitatibus, sit a consequuntur eos, quidem iusto officia hic temporibus rem nostrum ipsa suscipit minima dolore ut nisi libero voluptatum autem architecto in maiores! Quo hic temporibus maiores doloribus labore praesentium, culpa tempore mollitia cumque.</p>
 
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum nesciunt sit ex laudantium delectus vitae ea hic suscipit aliquid, neque commodi non, qui quod tempora expedita, ipsam reiciendis accusantium!</p>
-                        </div><!-- end of .wrapper -->
+                        </article><!-- end of .wrapper -->
                     </div><!-- end of .blogwrapper -->
                 </section>
 
                 <!-- COMMENTS SECTION -->
-                <section class="comments">
+                <section class="commentsSection">
                     <div class="wrapper blogWrapper">
                         <h2>Comments:</h2>
-                        <!-- comment 1 grouping -->
-                        <div class="comment1">
-                            <!-- comment 1 img -->
-                            <figure>
-                                <img src="./assets/comment-1.jpg" alt="Portrait of a guy with short hair smiling at the camera wearing a geen button down">
-                            </figure>
-                            <!-- comment 1 text -->
-                            <article>
-                                <h3>Tuesday November 21th, 2012 by Jeremy</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam ratione tempore itaque necessitatibus incidunt corrupti consequuntur architecto repellendus laborum sequi tenetur laboriosam et, sit explicabo autem doloribus molestias maxime, adipisci quas harum?</p>
-                            </article>
-                        </div>
-
-                        <!-- comment 2 grouping -->
-                        <div class="comment2">
-                            <!-- comment 2 img -->
-                            <figure>
-                                <img src="./assets/comment-2.jpg" alt="Portrait of a woman deadpan to the camera not smiling or forwning, She has on a green ivy crown and a jean button down shirt.">
-                            </figure>
-                            <!-- comment 2 text -->
-                            <article>
-                                <h3>Wednesday Novemeber 10th, 2019 by Julia</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam ratione tempore itaque necessitatibus incidunt corrupti consequuntur architecto repellendus laborum sequi tenetur laboriosam et, sit explicabo autem doloribus molestias maxime, adipisci quas harum? </p>
-                            </article>
-                        </div>
+                        <ul class="comments">
+                            <li class="comment1">
+                                <!-- comment 1 img -->
+                                <figure>
+                                    <img src="./assets/comment-1.jpg" alt="Portrait of a guy with short hair smiling at the camera wearing a geen button down">
+                                </figure>
+                                <!-- comment 1 text -->
+                                <article>
+                                    <h3>Tuesday November 21th, 2012 by Jeremy</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam ratione tempore itaque necessitatibus incidunt corrupti consequuntur architecto repellendus laborum sequi tenetur laboriosam et, sit explicabo autem doloribus molestias maxime, adipisci quas harum?</p>
+                                </article>
+                            </li>
+                            <li class="comment2">
+                                <!-- comment 2 img -->
+                                <figure>
+                                    <img src="./assets/comment-2.jpg" alt="Portrait of a woman deadpan to the camera not smiling or forwning, She has on a green ivy crown and a jean button down shirt.">
+                                </figure>
+                                <!-- comment 2 text -->
+                                <article>
+                                    <h3>Wednesday Novemeber 10th, 2019 by Julia</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam ratione tempore itaque necessitatibus incidunt corrupti consequuntur architecto repellendus laborum sequi tenetur laboriosam et, sit explicabo autem doloribus molestias maxime, adipisci quas harum? </p>
+                                </article>
+                            </li>
+                        </ul>
                     </div>
                 </section>
 
@@ -125,7 +124,7 @@
 
                                 <!-- email input -->
                                 <label for="userEmail" class="sr-only">Email address</label>
-                                <input type="text" id="userEmail" name="userEmail" placeholder="Email adress" required="true">
+                                <input type="text" id="userEmail" name="userEmail" placeholder="Email adress">
                             </div>
                             <!-- message input -->
                             <label for="comment" class="sr-only">Please leave a comment</label>
@@ -168,4 +167,5 @@
 
         <!-- LINKING JS -->
         <script src="./script.js"></script>
+        <script src="./app.js"></script>
     </body>

@@ -1015,10 +1015,10 @@ header .headerImg {
           box-shadow: -33px 35px 0px 1px #FE6F19;
 }
 
-.comments {
+.commentsSection {
   padding: 30px 0 100px 0;
 }
-.comments h2 {
+.commentsSection h2 {
   font-size: 2.6rem;
   color: #4C0341;
   text-transform: uppercase;

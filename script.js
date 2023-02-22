@@ -1,4 +1,4 @@
-// HAMBURGER MENU ===============================
+// HAMBURGER MENU ==================================================
 // declaring variables
 const navMenu = document.querySelector('.navFlex');
 
@@ -29,7 +29,7 @@ navIcons.addEventListener("click", menuToggle);
 
 
 
-// MODALS
+// MODALS===========================================================
 
 // MODAL 1
 // declaring variables
@@ -102,3 +102,4 @@ openModalFour.addEventListener('click', function() {
 closeModalFour.addEventListener ('click', function() {
     closeModal(modalBackgroundFour);
 });
+
