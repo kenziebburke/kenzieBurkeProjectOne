@@ -1,0 +1,187 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+#modalBackgroundOne{
+    @include modalBackground;
+}
+
+#modalOne{
+    @include modalBaseStyles;
+    background-color: $backgroundColor2;
+    box-shadow: 25px 25px 0px 1px $primaryColor;
+    article{
+        h2{
+            @include h2(2.1rem);
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        h3{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        flex-basis: 100%;
+        margin: 10%;
+        figure{
+            flex-basis: 80%;
+        }
+    }
+    button {
+        @include modalCloseButton;
+    }
+    button:hover,
+    button:focus{
+        font-size: 2rem;
+    }
+}
+
+// MODAL2
+#modalBackgroundTwo{
+    @include modalBackground;
+}
+
+#modalTwo{
+    @include modalBaseStyles;
+    height: 80vh;
+    box-shadow: 25px 25px 0px 1px $detailColor;
+    background-image: url(../assets/js/newAdditions.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    article{
+        flex-basis: 100%;
+        margin: 10% 20%;
+        padding: 10%;
+        text-align: center;
+        background-color: $backgroundColor2;
+        opacity: .8;
+        h2{
+            @include h2(2.1rem);
+        }
+        h3{
+            margin-top: 10px;
+        }
+    }
+    button{
+        @include modalCloseButton;
+    }
+    button:hover,
+    button:focus{
+        font-size: 2rem;
+    }
+}
+
+// MODAL3
+#modalBackgroundThree{
+    @include modalBackground;
+}
+
+#modalThree{
+    @include modalBaseStyles;
+    height: 80vh;
+    box-shadow: 25px 25px 0px 1px $detailColor;
+    background-image: url(../assets/js/tooMany.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        h2{
+            @include h2(2.1rem);
+            padding-bottom: 10px;
+        }
+        h3{
+            padding: 5px 0 30px 0;
+        }
+        aside{
+            margin: 10% 20%;
+            padding: 10%;
+            text-align: center;
+            background-color: $backgroundColor2;
+            opacity: .8;
+        }
+        form{
+            .flexModalForm{
+                display: flex;
+            }
+            input{
+                flex-basis: 60%;
+                border: 0;
+                background-color: inherit;
+                color: gray;
+                border-bottom: 2px solid #FE6F19;
+                margin-right: 3%;
+                padding: 0 0 10px 10px;
+            }
+            button{
+                flex-basis: 40%;
+                color: #fff;
+                background-color: $borderColor;
+                padding: 10px 12px;
+                text-transform: uppercase;
+                letter-spacing: 0.05rem;
+                font-size: 1rem;
+                border: 2px solid $borderColor;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                cursor: pointer;
+            }
+            button:hover,
+            button:focus{
+                color: $borderColor;
+                background-color: $backgroundColor2;
+            }
+        }
+    #closeModalThree{
+        @include modalCloseButton;
+    }
+    #closeModalThree:hover,
+    #closeModalThree:focus{
+        font-size: 2rem;
+    }
+}
+
+// MODAL 4
+#modalBackgroundFour{
+    @include modalBackground;
+}
+
+#modalFour{
+    @include modalBaseStyles;
+    height: 80vh;
+    box-shadow: 25px 25px 0px 1px $detailColor;
+    background-color: $backgroundColor2;
+    flex-direction: column;
+    article{
+        flex-basis: 100%;
+        margin: 10% 10% 0 10%;
+        padding: 10% 10% 0 10%;
+        text-align: center;
+        background-color: $backgroundColor1;
+        opacity: .8;
+        position: relative;
+        top: 150px;
+        h2{
+            @include h2(2.1rem);
+        }
+        .modalIcons{
+            padding-top: 40px;
+            i{
+                color: $primaryColor;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    figure{
+        height: 160%;
+        overflow-y: hidden
+    }
+    button{
+        @include modalCloseButton;
+    }
+    button:hover,
+    button:focus{
+        font-size: 2rem;
+    }
+}

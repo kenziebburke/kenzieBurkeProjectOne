@@ -59,30 +59,30 @@ header{
     nav{
         width: 40%;
     }
-    .navFlex{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        li a{
-            font-size: 1rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: black;
-            padding: 4px 7px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        a:hover,
-        a:focus{
-            color: white;
-            background-color: $primaryColor;
-        }
+}
+.navFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li a{
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: black;
+        padding: 4px 7px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    a:hover,
+    a:focus{
+        color: white;
+        background-color: $primaryColor;
     }
 }
 
-// hiding HAMBURGER icons
-.navToggle, .navClose{
+.navIcons{
     display: none;
 }
+
 
 
 // POSITIONING FOR THE INDEX HEADER IMG

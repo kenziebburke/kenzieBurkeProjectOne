@@ -27,35 +27,8 @@
                 <p class="logoP"> <span>Shoe</span>Kloset</p>
             </div>
 
-            <!-- hamburger menu  -->
-            <!-- code pen followed to help achieve the hamburger menu autor is Mark Caron https://codepen.io/markcaron/pen/pPZVWO -->
-            <a href="#navMenu" id="navMenuToggle" class="navToggle" aria-label="Open navigation menu">
-                <span class="sr-only">
-                    Open navigtion menu
-                </span>
-                <!-- open toggle for nav -->
-                <span>
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </span>
-            </a>
-
             <!-- Nav -->
             <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
-                <!--  -->
-                <a href="#navMenuToggle"
-                id="navMenuClose"
-                class="navClose"
-                aria-label="Close navigation menu">
-                    <span class="sr-only">
-                    Close main menu
-                    </span>
-                    <!-- exit toggle for nav -->
-                    <span>
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </span>
-                </a>
-                <!-- putting a title on the nav for when in hamburger better accessibility practice-->
-                <h2 class="sr-only">Navigation Menu</h2>
                 <!-- nav UL  -->
                 <ul class="navFlex">
                     <li><a href="index.html">Home</a></li>
@@ -63,12 +36,11 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <button class="navIcons">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
             </nav>
-
-            <a href="#navMenuToggle"
-            class="backdrop"
-            tabindex="-1"
-            aria-hidden="true" hidden></a>
         </div>
 
             <!-- header h1 -->
@@ -87,12 +59,31 @@
     <main>
         <!-- ABOUT SECTION -->
         <section class="about" id="about">
+                    <!-- Modal 1-->
+                    <div id="modalBackgroundOne">
+                        <div class="modal" id="modalOne">
+                            <article class="flexContainer">
+                                    <div class="articleLeft">
+                                    <figure>
+                                        <img src="./assets/js/founder.jpg" alt="headshot of a friendly looking woman smiling.">
+                                    </figure>
+                                    <h3> Hannah Delucry Founder of Shoe Kloset</h3>
+                                    <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quia distinctio sint culpa aliquam commodi eos cumque possimus, sapiente vel.""
+                                    </p>
+                                </div>
+                                <h2>Our Founder</h2>
+                            </article>
+                            <!-- add aria label for X bcc who is to say that makes sense -->
+                            <button id="closeModalOne"> X </button>
+                        </div><!-- end of .modal -->
+                    </div> <!-- end of #modalBackground -->
             <div class="wrapper">
                 <h2>What is under the sea</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid quas totam repellat, cum exercitationem voluptatum amet, veniam adipisci modi odio obcaecati inventore cupiditate deserunt commodi sit molestias eaque! Corrupti?</p>
-                <button>Find out more</button>
-            </div>
+                <button id="openModalOne">Find out more</button>
+            </div> <!-- end of .wrapper -->
         </section>
+
 
         <!-- BLOG PREVIEW SECTION -->
         <section class="blogPreview">
@@ -105,18 +96,47 @@
                     <article>
                         <h2>New additions</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellat numquam tempora explicabo, veritatis provident corrupti odit sapiente eligendi consequatur velit tenetur, labore non ratione, quisquam sunt mollitia fugiat! Accusantium?</p>
-                        <button>Read more</button>
+                        <button id="openModalTwo">Read more</button>
                     </article>
                 </div>
+                <!-- Modal 2 -->
+                <div id="modalBackgroundTwo">
+                    <div class="modal" id="modalTwo">
+                        <article>
+                            <h2>Sale 30% off</h2>
+                            <h3>Just added new fresh deals! Check out our blog page to learn more about how to style your new shoe! </h3>
+                        </article>
+                        <button id="closeModalTwo"> X </button>
+                    </div><!-- end of .modal -->
+                </div> <!-- end of #modalBackground -->
+
 
                 <!-- Second group of img and text |blog post 2| -->
                 <div class="blog2 flexContainer">
+                    <!-- text container for blog2 -->
                     <article>
                         <h2>Too many options</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis obcaecati illo perferendis molestiae neque qui quibusdam officiis modi eos sapiente, quo optio temporibus enim mollitia delectus eveniet dicta possimus voluptates!</p>
-                        <button>Read more</button>
+                        <button id="openModalThree">Read more</button>
                     </article>
-
+                    <!-- Modal 3 -->
+                    <div id="modalBackgroundThree">
+                        <div class="modal" id="modalThree">
+                            <aside>
+                                <h2>Join our mailing list</h2>
+                                <form action="">
+                                    <h3>Get 50% off Select Styles</h3>
+                                    <label for="userEmail" class="sr-only">Email address</label>
+                                    <div class="flexModalForm">
+                                        <input type="text" id="userEmail" name="userEmail" placeholder="Email adress" required="true">
+                                        <button type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </aside>
+                            <button id="closeModalThree"> X </button>
+                        </div><!-- end of .modal -->
+                    </div> <!-- end of #modalBackground --> 
+                    <!-- img container for blog2 -->
                     <figure>
                         <img src="./assets/right-image.jpg" alt="Six different heels all in beige earth tones, scattered on the ground, some are strappy and others are closed toe, all made in a velvety texture">
                     </figure>
@@ -183,9 +203,26 @@
                 <article>
                     <h2>Popular this month</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nulla cum quisquam consequatur, libero magnam sapiente assumenda laudantium fuga earum ipsa ex tenetur, sint veritatis eaque cupiditate harum, pariatur inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod earum dolorem magnam expedita.</p>
-                    <button>Find out more</button>
+                    <button id="openModalFour">Find out more</button>
                 </article>
             </div>
+            <!-- Modal 4 -->
+            <div id="modalBackgroundFour">
+                <div class="modal" id="modalFour">
+                    <article>
+                        <h2>Follow us to find out more!</h2>
+                        <div class="modalIcons">
+                            <i class="fa fa-facebook" aria-hidden="true" aria-label="facebook"></i>
+                            <i class="fa fa-instagram" aria-hidden="true" aria-label="instagram"></i>
+                            <i class="fa fa-twitter" aria-hidden="true" aria-label="twitter"></i>
+                        </div>
+                    </article>
+                    <figure>
+                        <img src="./assets/js/popular.jpg" alt="Model wearing black high heels with blue skinny jeans posing on a beach">
+                    </figure>
+                    <button id="closeModalFour"> X </button>
+                </div><!-- end of .modal -->
+            </div> <!-- end of #modalBackground --> 
         </section>
 
         <!-- GALLERY SECTION -->
@@ -194,7 +231,7 @@
                 <ul class="flexContainer">
                     <li><img src="./assets/gallery-image-1.jpg" alt="Pair of Legs dangeling over the side of a building. Person is wearing jeans with yellow sneakers that have white soles. The background is a european rustic parking lot"></li>
                     <li><img src="./assets/gallery-image-2.jpg" alt="Person wearing brown leather chelsea boots one foot is drawn up and to the back. Background has fall leaves and a white wooden detail."></li>
-                    <li><img src="./assets/gallery-image-3.jpg" alt="Woonden shoe rack with two tiers. The top teir has four converse style sneakers in different colors.The bottom level has four varying styles and colors of kids sized boots."></li>
+                    <li><img src="./assets/gallery-image-3.jpg" alt="Woonden shoe rack with two tiers. The top tier has four converse style sneakers in different colors.The bottom level has four varying styles and colors of kids sized boots."></li>
                 </ul>
             </div>
         </section>
@@ -206,5 +243,8 @@
             <p>Copyright © 2019 Juno College</p>
         </div>
     </footer>
+
+    <!-- LINKING JS -->
+    <script src="./script.js"></script>
 </body>
 </html>

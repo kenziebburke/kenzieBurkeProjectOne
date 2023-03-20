@@ -54,3 +54,36 @@
     padding: 0 0 10px 10px;
 }
 
+@mixin modalBackground{
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin modalCloseButton{
+    font-size: 1.5rem;
+    border: none;
+    background-color: inherit;
+    color: #4C0341;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    transition: font-size 0.3s ease;
+    cursor: pointer;
+}
+
+@mixin modalBaseStyles{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
