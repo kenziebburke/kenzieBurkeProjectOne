@@ -8,7 +8,8 @@
     .wrapper{
         text-align: center;
         h2{
-            @include h2(clamp(1.6rem, 3vw, 2.6rem));
+            @include h2;
+            font-size: clamp(1.6rem, 3vw, 2.6rem);
             padding: 20px 0;
         }
         p{
@@ -20,7 +21,7 @@
             padding: 8px 12px;
             text-transform: uppercase;
             letter-spacing: 0.05rem;
-            font-size: clamp(0.8rem, 2vw, 1rem);
+            font-size: clamp(0.8rem, 3vw, 1rem);
             border: 2px solid $primaryColor;
             transition: background-color 0.3s ease, color 0.3s ease;
             cursor: pointer;
@@ -81,7 +82,8 @@
 
         article{
             h2{
-                @include h2(2.1rem);
+                @include h2;
+                font-size: clamp(1.8rem, 3vw, 2.1rem);
                 padding: 20px 0;
             }
             p{
@@ -126,7 +128,7 @@
     .phoneIconFlex{
         display: flex;
         i{
-            font-size: 2rem;
+            font-size: clamp(1.7rem, 3vw, 2rem);
             color: $primaryColor;
         }
     }
@@ -137,7 +139,8 @@
         }
     }
     h2{
-        @include h2(2.6rem);
+        @include h2;
+        font-size: clamp(1.6rem, 5vw, 2.6rem);
         padding: 0  0 10px 15px;
     }
 }
@@ -159,7 +162,8 @@
             flex-basis: 64%;
             padding-left: 80px;
             h2{
-                @include h2(2.6rem);
+                @include h2;
+                font-size: clamp(1.6rem, 5vw, 2.6rem);
                 padding-bottom: 10px;
             }
             p{

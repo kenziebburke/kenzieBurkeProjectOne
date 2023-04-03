@@ -81,7 +81,7 @@
     background-color: inherit;
     border: none;
     display: block;
-    position: fixed;
+    position: absolute;
     z-index: 10;
     top: 4%;
     right: 6%;
@@ -261,11 +261,29 @@
         top: 180px;
         left: 8%;
     }
+    #modalOne{
+        box-shadow: 20px 20px 0px 1px $primaryColor;
+    }
     #modalTwo,
-    #modalThree,
+    #modalThree{
+        height: 38vh;
+        width: 38vh;
+        box-shadow: 20px 20px 0px 1px $detailColor;
+    }
     #modalFour{
         height: 38vh;
         width: 38vh;
+        box-shadow: 20px 20px 0px 1px $detailColor;
+        article{
+            z-index: 30;
+            top: 100px;
+        }
+        figure{
+            height: 100%;
+            overflow-y:visible;
+            position: relative;
+            top: -80px;
+        }
     }
     #modalThree{
         aside{
@@ -277,6 +295,7 @@
             }
             input{
                 flex-basis: 100%;
+                border-bottom: 0;
             }
             button{
                 flex-basis: 100%;
@@ -286,6 +305,7 @@
 }
 
 
-@media (max-width: 350px){
-    
+@media (max-width: 426px){
+    // BLOG
+    // CONTACT
 }

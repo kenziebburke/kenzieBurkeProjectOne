@@ -282,13 +282,13 @@ h1, h2 {
 
 h3, h4, h5, h6, p, a, li, button {
   font-family: "Lato", sans-serif;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
 p {
   line-height: 1.6rem;
   letter-spacing: 0.05rem;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
 .indexHeader {
@@ -323,7 +323,7 @@ header h1 {
   text-align: center;
 }
 header .indexH1 {
-  font-size: clamp(4rem, 2vw, 5.5rem);
+  font-size: clamp(4rem, 3vw, 5.5rem);
   width: 40%;
   text-align: left;
   line-height: 3.2rem;
@@ -365,7 +365,7 @@ header .indexH1 {
           align-items: center;
 }
 .navFlex li a {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 3vw, 1rem);
   font-weight: 400;
   text-transform: uppercase;
   color: black;
@@ -401,10 +401,10 @@ header .headerImg {
   text-align: center;
 }
 .about .wrapper h2 {
-  font-size: clamp(1.6rem, 3vw, 2.6rem);
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
   padding: 20px 0;
 }
 .about .wrapper p {
@@ -416,7 +416,7 @@ header .headerImg {
   padding: 8px 12px;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 3vw, 1rem);
   border: 2px solid #4C0341;
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -469,10 +469,10 @@ header .headerImg {
           box-shadow: -25px 25px 0px 1px #FE6F19;
 }
 .blogPreview article h2 {
-  font-size: 2.1rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.8rem, 3vw, 2.1rem);
   padding: 20px 0;
 }
 .blogPreview article p {
@@ -528,17 +528,17 @@ header .headerImg {
 .engagment .communityIconFlex i,
 .engagment .blogIconFlex i,
 .engagment .phoneIconFlex i {
-  font-size: 2rem;
+  font-size: clamp(1.7rem, 3vw, 2rem);
   color: #4C0341;
 }
 .engagment .locations i {
   color: #4C0341;
 }
 .engagment h2 {
-  font-size: 2.6rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.6rem, 5vw, 2.6rem);
   padding: 0 0 10px 15px;
 }
 
@@ -565,10 +565,10 @@ header .headerImg {
   padding-left: 80px;
 }
 .popular .flexContainer article h2 {
-  font-size: 2.6rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.6rem, 5vw, 2.6rem);
   padding-bottom: 10px;
 }
 .popular .flexContainer article p {
@@ -658,10 +658,10 @@ header .headerImg {
   margin: 10%;
 }
 #modalOne article h2 {
-  font-size: clamp(1.8rem, 2vw, 2.1rem);
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.8rem, 3vw, 2.1rem);
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -689,7 +689,7 @@ header .headerImg {
 }
 #modalOne button:hover,
 #modalOne button:focus {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 #modalBackgroundTwo {
@@ -740,10 +740,10 @@ header .headerImg {
   opacity: 0.8;
 }
 #modalTwo article h2 {
-  font-size: 2.1rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.8rem, 3vw, 2.1rem);
 }
 #modalTwo article h3 {
   margin-top: 10px;
@@ -762,7 +762,7 @@ header .headerImg {
 }
 #modalTwo button:hover,
 #modalTwo button:focus {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 #modalBackgroundThree {
@@ -804,10 +804,10 @@ header .headerImg {
   background-position: center;
 }
 #modalThree h2 {
-  font-size: 2.1rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.8rem, 3vw, 2.1rem);
   padding-bottom: 10px;
 }
 #modalThree h3 {
@@ -843,7 +843,7 @@ header .headerImg {
   padding: 10px 12px;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 3vw, 1rem);
   border: 2px solid #FE6F19;
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -868,7 +868,7 @@ header .headerImg {
 }
 #modalThree #closeModalThree:hover,
 #modalThree #closeModalThree:focus {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 #modalBackgroundFour {
@@ -922,17 +922,17 @@ header .headerImg {
   top: 150px;
 }
 #modalFour article h2 {
-  font-size: 2.1rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.8rem, 3vw, 2.1rem);
 }
 #modalFour article .modalIcons {
   padding-top: 40px;
 }
 #modalFour article .modalIcons i {
   color: #4C0341;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 #modalFour figure {
   height: 160%;
@@ -952,7 +952,7 @@ header .headerImg {
 }
 #modalFour button:hover,
 #modalFour button:focus {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .blogMain {
@@ -986,10 +986,10 @@ header .headerImg {
   padding-bottom: 10px;
 }
 .world h2 {
-  font-size: 2.6rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
   padding-bottom: 10px;
 }
 .world h3 {
@@ -1019,10 +1019,10 @@ header .headerImg {
   padding: 30px 0 100px 0;
 }
 .commentsSection h2 {
-  font-size: 2.6rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
 }
 
 .comment1,
@@ -1133,10 +1133,10 @@ header .headerImg {
   font-size: clamp(1rem, 3vw, 2rem);
 }
 .asideBlog h2 {
-  font-size: 1.5rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
   padding-top: 40px;
 }
 .asideBlog p {
@@ -1227,10 +1227,10 @@ header .headerImg {
   padding-top: 13%;
 }
 .contactAside h2 {
-  font-size: 1.5rem;
   color: #4C0341;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 .contactAside .asideIcons {
   height: 25px;
@@ -1368,7 +1368,7 @@ footer p {
     background-color: inherit;
     border: none;
     display: block;
-    position: fixed;
+    position: absolute;
     z-index: 10;
     top: 4%;
     right: 6%;
@@ -1528,11 +1528,32 @@ footer p {
     top: 180px;
     left: 8%;
   }
+  #modalOne {
+    -webkit-box-shadow: 20px 20px 0px 1px #4C0341;
+            box-shadow: 20px 20px 0px 1px #4C0341;
+  }
   #modalTwo,
-  #modalThree,
+  #modalThree {
+    height: 38vh;
+    width: 38vh;
+    -webkit-box-shadow: 20px 20px 0px 1px #882C07;
+            box-shadow: 20px 20px 0px 1px #882C07;
+  }
   #modalFour {
     height: 38vh;
     width: 38vh;
+    -webkit-box-shadow: 20px 20px 0px 1px #882C07;
+            box-shadow: 20px 20px 0px 1px #882C07;
+  }
+  #modalFour article {
+    z-index: 30;
+    top: 100px;
+  }
+  #modalFour figure {
+    height: 100%;
+    overflow-y: visible;
+    position: relative;
+    top: -80px;
   }
   #modalThree aside {
     padding: 5%;
@@ -1546,6 +1567,7 @@ footer p {
   #modalThree form input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    border-bottom: 0;
   }
   #modalThree form button {
     -ms-flex-preferred-size: 100%;
