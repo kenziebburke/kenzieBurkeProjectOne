@@ -50,7 +50,8 @@
     margin-left: 5%;
     padding-top: 13%;
     h2{
-        @include h2(1.5rem);
+        @include h2;
+        font-size: clamp(1rem, 3vw, 1.5rem);
     }
     .asideIcons{
         height: 25px;
@@ -58,7 +59,7 @@
         i{
             color: $primaryColor;
             margin-right: 15px;
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 3vw, 1.5rem);
         }
     }
 }

@@ -55,7 +55,7 @@ const closeModalThree = document.getElementById('closeModalThree');
 
 // variables for modal 4
 const openModalFour = document.getElementById('openModalFour');
-const modalBackfroundFour = document.getElementById('modalBackgroundFour');
+const modalBackgroundFour = document.getElementById('modalBackgroundFour');
 const closeModalFour = document.getElementById('closeModalFour');
 
 
@@ -103,3 +103,30 @@ closeModalFour.addEventListener ('click', function() {
     closeModal(modalBackgroundFour);
 });
 
+
+
+// COMMENT SECTION =================================================
+const formElement = document.querySelector('form');
+const inputElement = document.querySelector('#comment'); 
+const ulElement = document.querySelector('.comments');
+
+
+const userInput = function(event){
+    event.preventDefault(); 
+
+    const userComment = inputElement.value.trim(); 
+
+    if (userComment !== "" && userName !== ""){
+        const liElement = document.createElement('li');
+
+        const userText = document.createTextNode(userComment);
+
+        liElement.appendChild(userText);
+
+        ulElement.appendChild(liElement);
+
+        inputElement.value = ""; 
+    }
+}
+
+formElement.addEventListener('submit', userInput);

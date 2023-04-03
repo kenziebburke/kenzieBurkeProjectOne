@@ -1,14 +1,9 @@
 @use './variables' as *;
 // MEDIA QUERIES FOR TABLET
 @media (max-width:900px){
-    // TYPOGRAPHY STYLES 
-    h3, h4, h5, h6, p, a, li, button{
-        font-size: 0.8rem;
-    }
-            
+    // TYPOGRAPHY STYLES             
     p{
         line-height: 1.2rem;
-        font-size: 0.8rem;
     }
     // HEADER
     .blogHeader{
@@ -49,7 +44,6 @@
         li{
             margin: 10px;
             a{
-                font-size: 2rem;
                 color: white;
                 background-color: $primaryColor;
                 
@@ -87,7 +81,7 @@
     background-color: inherit;
     border: none;
     display: block;
-    position: fixed;
+    position: absolute;
     z-index: 10;
     top: 4%;
     right: 6%;
@@ -257,4 +251,61 @@
         }
     }
 }
+}
+
+
+@media (max-width: 450px){
+    #modalBackgroundOne{
+        height: 35vh;
+        width: 35vh;
+        top: 180px;
+        left: 8%;
+    }
+    #modalOne{
+        box-shadow: 20px 20px 0px 1px $primaryColor;
+    }
+    #modalTwo,
+    #modalThree{
+        height: 38vh;
+        width: 38vh;
+        box-shadow: 20px 20px 0px 1px $detailColor;
+    }
+    #modalFour{
+        height: 38vh;
+        width: 38vh;
+        box-shadow: 20px 20px 0px 1px $detailColor;
+        article{
+            z-index: 30;
+            top: 100px;
+        }
+        figure{
+            height: 100%;
+            overflow-y:visible;
+            position: relative;
+            top: -80px;
+        }
+    }
+    #modalThree{
+        aside{
+            padding: 5%;
+        }
+        form{
+            .flexModalForm{
+                flex-direction: column;
+            }
+            input{
+                flex-basis: 100%;
+                border-bottom: 0;
+            }
+            button{
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 426px){
+    // BLOG
+    // CONTACT
 }
