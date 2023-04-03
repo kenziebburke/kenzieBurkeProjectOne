@@ -8,7 +8,7 @@
     .wrapper{
         text-align: center;
         h2{
-            @include h2(2.6rem);
+            @include h2(clamp(1.6rem, 3vw, 2.6rem));
             padding: 20px 0;
         }
         p{
@@ -20,7 +20,7 @@
             padding: 8px 12px;
             text-transform: uppercase;
             letter-spacing: 0.05rem;
-            font-size: 1rem;
+            font-size: clamp(0.8rem, 2vw, 1rem);
             border: 2px solid $primaryColor;
             transition: background-color 0.3s ease, color 0.3s ease;
             cursor: pointer;

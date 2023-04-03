@@ -1,14 +1,9 @@
 @use './variables' as *;
 // MEDIA QUERIES FOR TABLET
 @media (max-width:900px){
-    // TYPOGRAPHY STYLES 
-    h3, h4, h5, h6, p, a, li, button{
-        font-size: 0.8rem;
-    }
-            
+    // TYPOGRAPHY STYLES             
     p{
         line-height: 1.2rem;
-        font-size: 0.8rem;
     }
     // HEADER
     .blogHeader{
@@ -49,7 +44,6 @@
         li{
             margin: 10px;
             a{
-                font-size: 2rem;
                 color: white;
                 background-color: $primaryColor;
                 
@@ -257,4 +251,41 @@
         }
     }
 }
+}
+
+
+@media (max-width: 450px){
+    #modalBackgroundOne{
+        height: 35vh;
+        width: 35vh;
+        top: 180px;
+        left: 8%;
+    }
+    #modalTwo,
+    #modalThree,
+    #modalFour{
+        height: 38vh;
+        width: 38vh;
+    }
+    #modalThree{
+        aside{
+            padding: 5%;
+        }
+        form{
+            .flexModalForm{
+                flex-direction: column;
+            }
+            input{
+                flex-basis: 100%;
+            }
+            button{
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 350px){
+    
 }
